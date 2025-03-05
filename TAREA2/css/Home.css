@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    width: 100%;
+    padding: 48px 0px 120px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.carrouselHome {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrouselContainer {
+    display: flex;
+    height: 300px;
+    animation: slide 60s infinite linear;
+    gap: 40px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    40% { transform: translateX(-75%); }
+    50% { transform: translateX(-75%); }
+    90% { transform: translateX(0%); }
+    100% { transform: translateX(0%); }
+}
+
+.text {
+    display: flex;
+    width: 822px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.text-picture {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.description {
+    display: flex;
+    width: 596px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.descriptionText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.image {
+    width: 596px;
+    justify-content: center;
+}
+
+
+.icons {
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+}
+
+.iconsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.iconsGroup {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+}
+
+
+.amenity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.abutUsbtns {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}

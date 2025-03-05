@@ -1,0 +1,120 @@
+@font-face {
+    font-family: PPNeueMontreal;
+    src: url('tipografía/PP_Neue_Montreal/PPNeueMontreal-Thin.otf') format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PPNeueMontreal;
+    src: url('tipografía/PP_Neue_Montreal/PPNeueMontreal-Book.otf') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PPNeueMontreal;
+    src: url('tipografía/PP_Neue_Montreal/PPNeueMontreal-Bold.otf') format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PPTelegraf;
+    src: url('tipografía/PP_Telegraf/PPTelegraf-Regular.otf') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PPTelegraf;
+    src: url('tipografía/PP_Telegraf/PPTelegraf-Ultrabold.otf') format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Texto del footer de las pantallas index, login y landing*/
+
+.footerIntroText{
+    font-family: PPNeueMontreal, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #F5F7FA;
+    font-size: 14px;
+    font-style: normal;
+}
+
+/* Texto del footer del website*/
+.hFooter{
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #323232;
+    font-size: 36px;
+    font-style: normal;
+}
+
+.hotelInfoTitle{
+    font-family: PPNeueMontreal, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #323232;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.footerText1{
+    font-family: PPNeueMontreal, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #323232;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.footerText2{
+    font-family: PPNeueMontreal, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #323232;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.title1{
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #13356A;
+    font-size: 38px;
+    font-style: normal;
+    text-align: center;
+}
+
+.title2{
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #13356A;
+    font-size: 38px;
+    font-style: normal;
+}
+
+.p1{
+    font-family: PPNeueMontreal, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #323232;
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+}
+
+.p2{
+    font-family: PPNeueMontreal, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #323232;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.p3{
+    font-family: PPNeueMontreal, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #323232;
+    font-size: 24px;
+    font-style: normal;
+    text-align: center;
+}
