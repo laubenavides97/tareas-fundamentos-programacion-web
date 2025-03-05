@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.containerLanding{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.webBtns{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}

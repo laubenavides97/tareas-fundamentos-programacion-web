@@ -1,0 +1,55 @@
+/* Footer de las pantallas index, login y landing */
+
+.footerIntro {
+    margin-top: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Footer del website */
+
+.footerWebSite {
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6E6E6;
+    padding: 80px 120px 20px 120px;
+    gap: 40px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+.footerHotelInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hotelInfoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.socialMediaContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footerLegalInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 12px;
+    border-top: 0.5px solid #676767;
+}

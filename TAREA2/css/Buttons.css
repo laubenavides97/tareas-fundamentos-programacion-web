@@ -1,0 +1,105 @@
+@font-face {
+    font-family: PPTelegraf;
+    src: url('tipografía/PP_Telegraf/PPTelegraf-Regular.otf') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Boton Sign in de las pantallas index y log in */
+.btn_signIn {
+    background-color: #F5F7FA;
+    color: #323232;
+    border: none;
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    padding: 10px 16px;
+    align-items: center;
+    cursor: pointer;
+    width: 350px;
+    transition: .3s;
+    border-radius: 0px;
+}
+
+.btn_signIn:hover {
+    background-color: #ddd;
+}
+
+.btn_validationAlert{
+    background-color: #13356A;
+    color: #F5F7FA;
+    border: none;
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    padding: 10px 16px;
+    align-items: center;
+    cursor: pointer;
+    width: 350px;
+    transition: .3s;
+    border-radius: 0px;
+}
+
+.btnBookNow:hover {
+    background-color: #0D1B33;
+}
+
+/* Botones para escoger entre la app web y el sitio web */
+.btnWeb {
+    background-color: #F5F7FA;
+    color: #323232;
+    border: none;
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    padding: 10px 16px;
+    align-items: center;
+    cursor: pointer;
+    width: 200px;
+    transition: .3s;
+}
+
+.btnWeb:hover {
+    background-color: #ddd;
+}
+
+/* Boton Book Now, CTA en el sitio web, dirigue a la app web*/
+.btnBookNow {
+    background-color: #13356A;
+    color: #F5F7FA;
+    border: none;
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    padding: 10px 16px;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 34px 10px 0px rgba(43, 41, 80, 0.00), 0px 22px 9px 0px rgba(43, 41, 80, 0.01), 0px 12px 7px 0px rgba(43, 41, 80, 0.05), 0px 5px 5px 0px rgba(43, 41, 80, 0.09), 0px 1px 3px 0px rgba(43, 41, 80, 0.10);
+}
+
+.btnBookNow:hover {
+    background-color: #0D1B33;
+}
+
+/* Secondary buttom, CTA para ver mas informacion*/
+
+.btnLearnMore {
+    background-color: #F5F7FA;
+    color: #13356A;
+    border: 0.5px solid #13356A;
+    box-shadow: 0px 34px 10px 0px rgba(43, 41, 80, 0.00), 0px 22px 9px 0px rgba(43, 41, 80, 0.01), 0px 12px 7px 0px rgba(43, 41, 80, 0.05), 0px 5px 5px 0px rgba(43, 41, 80, 0.09), 0px 1px 3px 0px rgba(43, 41, 80, 0.10);
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    padding: 8px 16px;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.btnLearnMore:hover {
+    border: 0.5px solid #0D1B33;
+    background-color: #EDEFF2;
+}

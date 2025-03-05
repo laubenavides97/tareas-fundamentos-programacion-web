@@ -1,0 +1,51 @@
+@font-face {
+    font-family: PPTelegraf;
+    src: url('tipografía/PP_Telegraf/PPTelegraf-Regular.otf') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    padding: 16px 120px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #B3B3B3;
+}
+
+.logoMenu {
+    height: 20px;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+
+.OptionMenu {
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    color: #808080;
+    padding: 8px 16px;
+    transition: .3s;
+}
+
+.OptionMenu:hover{
+    color: #13356A;
+}
+
+.OptionMenuSelected{
+    font-family: PPTelegraf, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    color: #13356A;
+    border-bottom: 1.5px solid #13356A;
+    padding: 8px 16px;
+}
