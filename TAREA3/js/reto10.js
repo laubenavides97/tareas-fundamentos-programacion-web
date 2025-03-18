@@ -97,17 +97,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //funcion que muestra el resultado final de la busqueda
     function mostrarResultado(empleado) {
+        resultadoContainer.style.display ="flex";
         //permite crear contenido HTML usando la propieda innerHTML
         resultadoContainer.innerHTML = `
-        <div id="resultado" class="resultado">
             <img src="imagenes/${empleado.foto}" alt="Foto del empleado">
             <div class="cardEmpleado">
                 <span class="hRetos2">Nombre: ${empleado.nombre}</span>
                 <span class="pResultado">Apellidos: ${empleado.apellidos}</span>
                 <span class="pResultado">Departamento: ${empleado.departamento}</span>
             </div>
-        </div>
-                `;
+        `;
+
     }
 
 })
@@ -115,4 +115,5 @@ document.addEventListener('DOMContentLoaded', function () {
 function borrar() {
     document.getElementById("cedula").value = "";
     document.getElementById("resultado").innerHTML = "";
+    document.getElementById("resultado").style.display ="none";
 }

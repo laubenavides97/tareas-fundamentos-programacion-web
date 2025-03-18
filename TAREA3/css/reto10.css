@@ -38,7 +38,7 @@
 }
 
 .resultado {
-    display: flex;
+    display: none;
     padding: 40px;
     flex-direction: column;
     justify-content: center;
