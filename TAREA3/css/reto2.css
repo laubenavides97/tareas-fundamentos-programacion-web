@@ -1,0 +1,82 @@
+.containerReto {
+    display: flex;
+    width: 100%;
+    padding: 153px 120px 80px 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.containerConvertidores {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    align-self: stretch;
+}
+
+.compraVenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex: 1 0 0;
+}
+
+.containerInput {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+label {
+    display: flex;
+    width: 174px;
+    height: 36px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #CCC;
+}
+
+input {
+    display: flex;
+    height: 36px;
+    padding: 8px;
+    align-items: center;
+    flex: 1 0 0;
+    border: 1px solid #CCC;
+}
+
+.containerBotones {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.resultado {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.montoFinal {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid #CCC;
+}
+
+.pResultado{
+    opacity: 0;
+}

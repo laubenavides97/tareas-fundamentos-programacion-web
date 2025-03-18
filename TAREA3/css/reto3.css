@@ -1,0 +1,68 @@
+.containerReto {
+    display: flex;
+    width: 100%;
+    padding: 153px 120px 240px 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.dropdown {
+    min-width: 350px;
+    position: relative;
+    box-shadow: 0px 34px 10px 0px rgba(43, 41, 80, 0.00), 0px 22px 9px 0px rgba(43, 41, 80, 0.01), 0px 12px 7px 0px rgba(43, 41, 80, 0.05), 0px 5px 5px 0px rgba(43, 41, 80, 0.09), 0px 1px 3px 0px rgba(43, 41, 80, 0.10);
+}
+
+.dropdownDefault {
+    display: flex;
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #3F0573;
+}
+
+.flecha {
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 8px solid #F5F7FA;
+    ;
+    transition: 0.3s;
+}
+
+.flecha-rotate {
+    transform: rotate(90deg);
+}
+
+.menu {
+    background-color: #5C3084;
+    list-style: none;
+    padding: 8px 20px;
+    position: absolute;
+    width: 100%;
+    transition: 300ms cubic-bezier(0.77, 0, 0.18, 1);
+    z-index: 1;
+    overflow-y: scroll;
+    display: none;
+}
+
+.dropdownOption {
+    padding: 12px;
+    margin: 4px 0;
+    cursor: pointer;
+}
+
+.dropdownOption:hover {
+    background: #361950;
+}
+
+.dropdownOptionText {
+    display: block;
+    width: 100%;
+}
+
+.menu-open {
+    height: 280px;
+}

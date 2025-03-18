@@ -1,0 +1,61 @@
+.containerReto {
+    display: flex;
+    width: 100%;
+    padding: 153px 120px 80px 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    align-self: stretch;
+}
+
+.textContainer {
+    display: flex;
+width: 540px;
+flex-direction: column;
+align-items: center;
+gap: 60px;
+}
+
+.logoApple{
+    height: 200px;
+}
+
+.seleccion{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+align-self: stretch;
+}
+
+select{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    flex: 1 0 0;
+    height: 36px;
+    align-items: center;
+    border: 1px solid #CCC;
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.picture {
+    justify-content: center;
+    width: 540px;
+    gap: 32px;
+}
+
+
+

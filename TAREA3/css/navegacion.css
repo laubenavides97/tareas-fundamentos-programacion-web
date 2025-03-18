@@ -1,0 +1,65 @@
+#navegacion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    gap: 4px;
+}
+
+#navLeft {
+    width: 33px;
+    height: 33px;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+}
+
+.navNumber {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(63, 5, 115, 0.00);
+    transition: .3s;
+}
+
+.navNumber:hover {
+    border-bottom: 2px solid #3F0573;
+}
+
+#selectedNumber {
+    border-bottom: 2px solid rgba(63, 5, 115, 0.00);
+}
+
+#navRight {
+    width: 33px;
+    height: 33px;
+}
+
+/* Pop up*/
+
+
+.popup {
+    background-color: #F5F7FA;
+    border-radius: 0px;
+    border-width: 0px;
+    width: 420px; 
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.popUpContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}

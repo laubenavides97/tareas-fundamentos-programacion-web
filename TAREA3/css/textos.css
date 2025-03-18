@@ -1,0 +1,223 @@
+/* header */
+.subtitulo {
+    color: #3F0573;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.75;
+}
+
+.titulo {
+    color: #3F0573;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.75;
+}
+
+/* body */
+.tituloReto {
+    align-self: stretch;
+    color: #1A1A1A;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* navegacion */
+.navNumber {
+    color: #999;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#selectedNumber {
+    color: #3F0573;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* footer */
+.hFooter {
+    align-self: stretch;
+    color: #F5F7FA;
+    font-family: "Inter";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.75;
+}
+
+.infoCursoTitulo {
+    align-self: stretch;
+    color: #F5F7FA;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.75;
+}
+
+.footerText1 {
+    align-self: stretch;
+    color: #F5F7FA;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.footerText2 {
+    color: #F5F7FA;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+/* Reto 1*/
+.hRetos {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.pFactura {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Reto 2 */
+.hRetos2 {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.pResultado {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Reto 3 */
+.dropdownTitle {
+    color: #F5F7FA;
+    text-align: left;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dropdownOptionText {
+    color: #F5F7FA;
+    text-align: left;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Reto 4 */
+.select {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Reto 5 */
+.celular {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.almacenamiento {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+/* Pop up*/
+.titlePopUp {
+    color: #191919;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.resultado {
+    color: #191919;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Inputs */
+label {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
