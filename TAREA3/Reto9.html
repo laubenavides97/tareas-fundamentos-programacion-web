@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/textos.css">
   <link rel="stylesheet" type="text/css" href="css/botones.css">
-  <link rel="stylesheet" type="text/css" href="css/reto1.css">
+  <link rel="stylesheet" type="text/css" href="css/reto9.css">
   <link rel="stylesheet" type="text/css" href="css/navegacion.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,10 +23,57 @@
   <!-- Header -->
   <header>
     <p class="subtitulo">Reto 9</p>
-    <p class="titulo">Retos programados</p>
+    <p class="titulo">Votación en línea</p>
     <a href="index.html"> <button class="btnInicio">Inicio</button> </a>
   </header>
 
+  <!-- Reto 9 -->
+  <div class="containerReto">
+    <div class="containerRegistro-Consulta">
+      <span class="hRetos2">Haz tu voto</span>
+
+      <div class="containerForm" id="Form">
+        <div class="inputNotas">
+          <label for="nombre" class="pLabel2">Nombre del estudiante</label>
+          <input type="text" id="nombre" class="pInput" placeholder="Ingresa tu nombre completo">
+        </div>
+
+        <div class="inputNotas">
+          <label for="apellidos" class="pLabel2">Cédula</label>
+          <input type="number" id="cedula" class="pInput" placeholder="Ingresa tu número de cédula">
+        </div>
+
+        <div class="inputNotas">
+          <label for="nota1" class="pLabel2">Correo electrónico</label>
+          <input type="text" id="correo" class="pInput" placeholder="Ingresa tu correo electrónico">
+        </div>
+
+        <div class="inputNotas">
+          <label for="nota2" class="pLabel2">Fecha de nacimiento</label>
+          <input type="date" id="nacimiento" class="pInput" placeholder="Ingresa tu fecha de nacimiento">
+        </div>
+
+        <div class="inputNotas">
+          <label for="nota3" class="pLabel2">¿Asistirás ir al paseo de fin de año?</label>
+          <select id="opcion" class="pInput">
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+        </select>
+        </div>
+      </div>
+
+      <button class="btnAccion" id="btnAccion" type="button" onclick="votar()">
+        Enviar voto
+      </button>
+
+      <button class="btnAccion" id="btnAccion" type="button" onclick="verVotos()">
+        Ver votos
+      </button>
+    </div>
+
+    </div>
+  </div>
 
   <!-- Navegación inferior -->
   <div id="navegacion">
@@ -39,7 +86,7 @@
 
     <div class="numbers">
       <div class="containerNumber">
-        <a href="Reto1.html" class="navNumber" id="selectedNumber">1</a>
+        <a href="Reto1.html" class="navNumber">1</a>
       </div>
 
       <div class="containerNumber">
@@ -71,7 +118,7 @@
       </div>
 
       <div class="containerNumber">
-        <a href="Reto9.html" class="navNumber">9</a>
+        <a href="Reto9.html" class="navNumber" id="selectedNumber">9</a>
       </div>
 
       <div class="containerNumber">
@@ -123,6 +170,17 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/reto9.js"></script>
+
+  <!-- libreria SWEETALERT-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- interactividad Lottie JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+  <!-- libreria Lottie JS-->
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </body>
 
 </html>

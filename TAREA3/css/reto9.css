@@ -40,3 +40,16 @@
     border: 0.5px solid var(--Gris-textos-3, #808080);
     background: var(--Blanco-cards, #FAFBFF);
 }
+
+#resultado {
+    display: none;
+}
+
+.texto {
+    color: #191919;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
