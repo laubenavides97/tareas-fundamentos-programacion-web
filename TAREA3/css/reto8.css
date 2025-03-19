@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
-    align-self: stretch;
+    align-self: center;
 }
 
 .pInput {
@@ -39,4 +39,8 @@
     border-radius: 2px;
     border: 0.5px solid var(--Gris-textos-3, #808080);
     background: var(--Blanco-cards, #FAFBFF);
+}
+
+#resultado{
+    display: none;
 }

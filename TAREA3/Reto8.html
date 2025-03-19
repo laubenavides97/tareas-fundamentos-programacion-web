@@ -59,7 +59,7 @@
         </div>
       </div>
 
-      <button class="btnAccion" id="btnAccion" type="submit" onclick="agregarEstudiante();">
+      <button class="btnAccion" id="btnAccion" type="submit" onclick="agregarEstudiante()">
         Agregar estudiante
       </button>
     </div>
@@ -70,13 +70,15 @@
       <div class="inputNotas">
         <label for="seleccionarEstudiante" class="pLabel2">Seleccionar estudiante</label>
         <select id="seleccionarEstudiante" class="pInput">
-          <option>Selecciona un estudiante</option>
+          <option class="pInput">Selecciona un estudiante</option>
         </select>
       </div>
 
-      <button class="btnAccion" id="btnAccion" type="submit" onclick="calcularPromedio();">
+      <button class="btnAccion" id="btnAccion" type="submit" onclick="calcularPromedio()">
         Calcular promedio
       </button>
+
+      <span id="resultado" class="pResultado"></span>
     </div>
   </div>
 
@@ -93,7 +95,7 @@
 
     <div class="numbers">
       <div class="containerNumber">
-        <a href="Reto1.html" class="navNumber" id="selectedNumber">1</a>
+        <a href="Reto1.html" class="navNumber">1</a>
       </div>
 
       <div class="containerNumber">
@@ -121,7 +123,7 @@
       </div>
 
       <div class="containerNumber">
-        <a href="Reto8.html" class="navNumber">8</a>
+        <a href="Reto8.html" class="navNumber" id="selectedNumber">8</a>
       </div>
 
       <div class="containerNumber">
@@ -179,6 +181,17 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/reto8.js"></script>
+
+  <!-- libreria SWEETALERT-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- interactividad Lottie JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+  <!-- libreria Lottie JS-->
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </body>
 
 </html>
