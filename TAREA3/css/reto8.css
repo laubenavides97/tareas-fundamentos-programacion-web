@@ -1,0 +1,42 @@
+.containerReto {
+    display: flex;
+    width: 100%;
+    padding: 153px 120px 80px 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.containerRegistro-Consulta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.inputNotas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.pInput {
+    display: flex;
+    width: 350px;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+    border: 0.5px solid var(--Gris-textos-3, #808080);
+    background: var(--Blanco-cards, #FAFBFF);
+}

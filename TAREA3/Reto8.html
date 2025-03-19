@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/textos.css">
   <link rel="stylesheet" type="text/css" href="css/botones.css">
-  <link rel="stylesheet" type="text/css" href="css/reto1.css">
+  <link rel="stylesheet" type="text/css" href="css/reto8.css">
   <link rel="stylesheet" type="text/css" href="css/navegacion.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,13 +27,67 @@
     <a href="index.html"> <button class="btnInicio">Inicio</button> </a>
   </header>
 
+  <!-- Reto 8 -->
+  <div class="containerReto">
+    <div class="containerRegistro-Consulta">
+      <span class="hRetos2">Registro de notas</span>
+
+      <div class="containerForm">
+        <div class="inputNotas">
+          <label for="nombre" class="pLabel2">Nombre del estudiante</label>
+          <input type="text" id="nombre" class="pInput" placeholder="Ingresa solo el nombre del estudiante">
+        </div>
+
+        <div class="inputNotas">
+          <label for="apellidos" class="pLabel2">Apellidos del estudiante</label>
+          <input type="text" id="apellidos" class="pInput" placeholder="Ingresa los apellidos del estudiante">
+        </div>
+
+        <div class="inputNotas">
+          <label for="nota1" class="pLabel2">Nota 1</label>
+          <input type="number" id="nota1" class="pInput" placeholder="Ingresa la nota 1">
+        </div>
+
+        <div class="inputNotas">
+          <label for="nota2" class="pLabel2">Nota 2</label>
+          <input type="number" id="nota2" class="pInput" placeholder="Ingresa la nota 2">
+        </div>
+
+        <div class="inputNotas">
+          <label for="nota3" class="pLabel2">Nota 3</label>
+          <input type="number" id="nota3" class="pInput" placeholder="Ingresa la nota 3">
+        </div>
+      </div>
+
+      <button class="btnAccion" id="btnAccion" type="submit" onclick="agregarEstudiante();">
+        Agregar estudiante
+      </button>
+    </div>
+
+    <div class="containerRegistro-Consulta">
+      <span class="hRetos2">Consultar estudiantes</span>
+
+      <div class="inputNotas">
+        <label for="seleccionarEstudiante" class="pLabel2">Seleccionar estudiante</label>
+        <select id="seleccionarEstudiante" class="pInput">
+          <option>Selecciona un estudiante</option>
+        </select>
+      </div>
+
+      <button class="btnAccion" id="btnAccion" type="submit" onclick="calcularPromedio();">
+        Calcular promedio
+      </button>
+    </div>
+  </div>
 
   <!-- Navegación inferior -->
   <div id="navegacion">
     <div id="navLeft">
-      <a href="Reto7.html"> <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-        <path d="M21.1887 22.7975L14.8912 16.5L21.1887 10.1887L19.25 8.25L11 16.5L19.25 24.75L21.1887 22.7975Z" fill="#3F0573"/>
-      </svg>
+      <a href="Reto7.html"> <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+          fill="none">
+          <path d="M21.1887 22.7975L14.8912 16.5L21.1887 10.1887L19.25 8.25L11 16.5L19.25 24.75L21.1887 22.7975Z"
+            fill="#3F0573" />
+        </svg>
       </a>
     </div>
 
@@ -80,9 +134,11 @@
     </div>
 
     <div id="navRight">
-      <a href="Reto9.html"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-        <path d="M11.8113 22.7975L18.1088 16.5L11.8113 10.1887L13.75 8.25L22 16.5L13.75 24.75L11.8113 22.7975Z" fill="#3F0573"/>
-      </svg>
+      <a href="Reto9.html"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+          fill="none">
+          <path d="M11.8113 22.7975L18.1088 16.5L11.8113 10.1887L13.75 8.25L22 16.5L13.75 24.75L11.8113 22.7975Z"
+            fill="#3F0573" />
+        </svg>
       </a>
     </div>
   </div>
