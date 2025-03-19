@@ -12,11 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     hotspots.forEach(hotspot => {
-        // Mostrar un tooltip en hover
-        hotspot.addEventListener("mouseover", () => {
-            hotspot.setAttribute("title", "Haz click");
-        });
-
         // Mostrar SweetAlert con información en click
         hotspot.addEventListener("click", (event) => {
             event.preventDefault(); // Evita comportamiento predeterminado del área
