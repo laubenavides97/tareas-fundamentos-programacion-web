@@ -26,13 +26,13 @@ infospot1_1.position.set(-25 ,-136 , -500);
 infospot1_2.position.set(-156 ,295 , -500);
 infospot1_3.position.set(-500 ,97 , -492);
 infospot1_4.position.set(-500 ,419 , -68);
-infospot1_5.position.set(-420 ,-51 , 500);
-infospot1_6.position.set(-200 ,-29 , 500);
-infospot1_7.position.set(-59 ,293 , 499);
-infospot1_8.position.set(136 ,500 , 386);
-infospot1_9.position.set(500 ,348 , 282);
-infospot1_10.position.set(389 ,500 , -103);
-infospot1_11.position.set(500 ,92 , -173);
+infospot1_5.position.set(-200 ,-29 , 500);
+infospot1_6.position.set(-59 ,293 , 499);
+infospot1_7.position.set(136 ,500 , 386);
+infospot1_8.position.set(500 ,348 , 282);
+infospot1_9.position.set(389 ,500 , -103);
+infospot1_10.position.set(500 ,92 , -173);
+infospot1_11.position.set(500 ,-55 , -174);
 
 //agregar las zonas infospot
 panorama1.add(infospot1_1);
@@ -51,9 +51,7 @@ panorama1.add(infospot1_11);
 
 //contenido de los infospot1
 infospot1_1.addHoverText('Haga click en cada punto de información para pasar a la siguiente vista', -5);
-infospot1_1.element.innerHTML = '<div class="tourHover">Haga click en cada punto de<br>información para pasar a la siguiente vista</div>';
-// Cambiar el color del Infospot inicial
-//infospot1_1.material.color.set(0x1e1595);
+infospot1_1.element.innerHTML = '<div class="tourHover">Haz click en cada punto de<br>información para pasar a la siguiente vista</div>';
 panorama1.add(infospot1_1);
 
 //contenido de los infospot2
@@ -62,8 +60,8 @@ infospot1_2.element.innerHTML = '<div class="tourHover">Estrella del norte</div>
 panorama1.add(infospot1_2);
 
 //contenido de los infospot3
-infospot1_3.addHoverText('Alojamiento', -5);
-infospot1_3.element.innerHTML = '<div class="tourHover">Alojamiento</div>';
+infospot1_3.addHoverText('Disfruta nuestro alojamiento', -5);
+infospot1_3.element.innerHTML = '<div class="tourHover">Disfruta de<br>nuestro alojamiento</div>';
 panorama1.add(infospot1_3);
 
 //contenido de los infospot4
@@ -71,39 +69,39 @@ infospot1_4.addHoverText('Puedes ver millones de estrellas', -5);
 infospot1_4.element.innerHTML = '<div class="tourHover">Puedes ver millones<br>de estrellas</div>';
 panorama1.add(infospot1_4);
 
-//contenido de los infospot5
-infospot1_5.addHoverText('Calle de acceso', -5);
-infospot1_5.element.innerHTML = '<div class="tourHover">Calle de acceso</div>';
+//contenido de los infospot6
+infospot1_5.addHoverText('Puedes rentar un auto', -5);
+infospot1_5.element.innerHTML = '<div class="tourHover">Puedes rentar un auto para<br>ir a otro puntos de observación</div>';
 panorama1.add(infospot1_5);
 
-//contenido de los infospot6
-infospot1_6.addHoverText('Puedes rentar un auto', -5);
-infospot1_6.element.innerHTML = '<div class="tourHover">Puedes rentar un auto</div>';
+//contenido de los infospot7
+infospot1_6.addHoverText('Vista #1 de las aurolas boreales', -5);
+infospot1_6.element.innerHTML = '<div class="tourHover">Vista #1 de las<br>aurolas boreales</div>';
 panorama1.add(infospot1_6);
 
-//contenido de los infospot7
-infospot1_7.addHoverText('Vista #1 de las aurolas boreales', -5);
-infospot1_7.element.innerHTML = '<div class="tourHover">Vista #1 de las<br>aurolas boreales</div>';
+//contenido de los infospot8
+infospot1_7.addHoverText('Vista #2 de las aurolas boreales', -5);
+infospot1_7.element.innerHTML = '<div class="tourHover">Vista #2 de las<br>aurolas boreales</div>';
 panorama1.add(infospot1_7);
 
-//contenido de los infospot8
-infospot1_8.addHoverText('Vista #2 de las aurolas boreales', -5);
-infospot1_8.element.innerHTML = '<div class="tourHover">Vista #2 de las<br>aurolas boreales</div>';
+//contenido de los infospot9
+infospot1_8.addHoverText('Vista #3 de las aurolas boreales', -5);
+infospot1_8.element.innerHTML = '<div class="tourHover">Vista #3 de las<br>aurolas boreales</div>';
 panorama1.add(infospot1_8);
 
 //contenido de los infospot9
-infospot1_9.addHoverText('Vista #3 de las aurolas boreales', -5);
-infospot1_9.element.innerHTML = '<div class="tourHover">Vista #3 de las<br>aurolas boreales</div>';
-panorama1.add(infospot1_9);
+infospot1_9.addHoverText('Vista #4 de las aurolas boreales', -5);
+infospot1_9.element.innerHTML = '<div class="tourHover">Vista #4 de las<br>aurolas boreales</div>';
+panorama1.add(infospot1_8);
 
 //contenido de los infospot10
-infospot1_10.addHoverText('Vista #4 de las aurolas boreales', -5);
-infospot1_10.element.innerHTML = '<div class="tourHover">Vista #4 de las<br>aurolas boreales</div>';
+infospot1_10.addHoverText('Video', -5);
+infospot1_10.element.innerHTML = '<div class="tourHover"><iframe width="560" height="315" src="https://www.youtube.com/embed/T75IKSXVXlc?si=1p79rP0jC-jMRqCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>';
 panorama1.add(infospot1_10);
 
 //contenido de los infospot11
-infospot1_11.addHoverText('Vista #5 de las aurolas boreales', -5);
-infospot1_11.element.innerHTML = '<div class="tourHover">Vista #5 de las<br>aurolas boreales</div>';
+infospot1_11.addHoverText('Regresa al inicio', -5);
+infospot1_11.element.innerHTML = '<div class="tourHover">Regresa al inicio</div>';
 panorama1.add(infospot1_11);
 
 
@@ -150,15 +148,11 @@ infospot1_9.addEventListener('click', function() {
     viewer.tweenControlCenter(infospot1_10.position);
 });
 
-infospot1_10.addEventListener('click', function() {
-    // Transición suave de la cámara hacia la posición de infospot1_1
-    viewer.tweenControlCenter(infospot1_11.position);
-});
-
 infospot1_11.addEventListener('click', function() {
     // Transición suave de la cámara hacia la posición de infospot1_1
     viewer.tweenControlCenter(infospot1_1.position);
 });
+
 
 
 //permiter mostrar/ocultar  la panoramica
