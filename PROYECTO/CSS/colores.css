@@ -1,0 +1,91 @@
+:root{
+    /*Background and text*/
+    --Black: #0C0C0D;
+    --DarkGray: #4B4B4D;
+    --LightGray: #C9C9CC;
+    --White: #FBFBFF;
+
+    /*Accent*/
+    --Blue: #002066;
+    --BlueHover: #0F368A;
+    --DarkBlue: #001033;
+    --LightBlue: #BACEF7;
+
+    /*Alerts*/
+    --GreenSuccess: #009926;
+    --RedError: #CC0022;
+}
+
+/* Text */
+.Black{
+    color: var(--Black);
+}
+
+.DarkGray{
+    color: var(--DarkGray);
+}
+
+.LightGray{
+    color: var(--LightGray);
+}
+
+.White{
+    color: var(--White);
+}
+
+.Blue{
+    color: var(--Blue);
+}
+
+.DarkBlue{
+    color: var(--DarkBlue);
+}
+
+.LightBlue{
+    color: var(--LightBlue);
+}
+
+.GreenSuccess{
+    color: var(--GreenSuccess);
+}
+
+.RedError{
+    color: var(--RedError);
+}
+
+/* Background */
+.B-Black{
+    background-color: var(--Black);
+}
+
+.B-DarkGray{
+    background-color: var(--DarkGray);
+}
+
+.B-LightGray{
+    background-color: var(--LightGray);
+}
+
+.B-White{
+    background-color: var(--White);
+}
+
+.B-Blue{
+    background-color: var(--Blue);
+}
+
+.B-DarkBlue{
+    background-color: var(--DarkBlue);
+}
+
+.B-LightBlue{
+    background-color: var(--LightBlue);
+}
+
+.B-GreenSuccess{
+    background-color: var(--GreenSuccess);
+}
+
+.B-RedError{
+    background-color: var(--RedError);
+}

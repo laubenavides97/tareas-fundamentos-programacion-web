@@ -1,0 +1,220 @@
+:root {
+    /*Tipography*/
+    --DarkerGrotesque: "Darker Grotesque", sans-serif;
+    --DMSans: "DM Sans", sans-serif;
+
+    /*Colors*/
+    --Black: #0C0C0D;
+    --Black0: #0C0C0D · 0%;
+    --DarkGray: #4B4B4D;
+    --LightGray: #C9C9CC;
+    --White: #FBFBFF;
+    --Blue: #002066;
+    --BlueHover: #0F368A;
+    --DarkBlue: #001033;
+    --LightBlue: #BACEF7;
+    --GreenSuccess: #009926;
+    --RedError: #CC0022;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+.MiniCaps {
+    font-family: var(--DMSans);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0225rem;
+    text-transform: uppercase;
+}
+
+.Mini {
+    font-family: var(--DMSans);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.0225rem;
+}
+
+.Body {
+    font-family: var(--DMSans);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.02625rem;
+}
+
+.Large {
+    font-family: var(--DMSans);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+}
+
+.S2 {
+    font-family: var(--DMSans);
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    letter-spacing: -0.03563rem;
+}
+
+.S1 {
+    font-family: var(--DMSans);
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4375rem;
+    letter-spacing: -0.05844rem;
+}
+
+.H2 {
+    font-family: var(--DarkerGrotesque);
+    font-size: 2.4375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.8125rem;
+    letter-spacing: -0.07313rem;
+}
+
+.H1 {
+    font-family: var(--DarkerGrotesque);
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.08625rem;
+}
+
+.Huge {
+    font-family: var(--DarkerGrotesque);
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.8125rem;
+    letter-spacing: -0.15rem;
+}
+
+/*---------------------Buttons*/
+.CTA-285 {
+    display: flex;
+    width: 17.8125rem;
+    padding: 0.75rem 0rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    border: 1px solid var(--White);
+    font-family: var(--DMSans);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: var(--White);
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.CTA-285:hover {
+    background-color: rgba(12, 12, 13, 0.40);
+}
+
+.CTA-342 {
+    display: flex;
+    width: 21.375rem;
+    padding: 0.75rem 0rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    border: 1px solid var(--White);
+    font-family: var(--DMSans);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: var(--White);
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.CTA-342:hover {
+    background-color: rgba(12, 12, 13, 0.40);
+}
+
+
+.CTA-Hug {
+    display: inline-flex;
+    padding: 0.5rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    font-family: var(--DMSans);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: var(--Black);
+    background-color: transparent;
+    border: 1px solid var(--Black);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.CTA-Hug:hover {
+    border: 1px solid var(--Blue);
+    background: var(--Blue);
+}
+
+.MenuOption {
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--Black);
+    text-align: center;
+    font-family: var(--DMSans);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+    border-bottom: 1px solid var(--Black0);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.MenuOption:hover{
+    border-bottom: 1px solid var(--Black);
+}
+
+.MenuSelected {
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--Black);
+    text-align: center;
+    font-family: var(--DMSans);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+    border-bottom: 1px solid var(--Black);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon para el modo claro -->
+    <link href="../IMAGENES/faviconLight.svg" rel="icon" media="(prefers-color-scheme: light)">
+    <!-- Favicon para el modo oscuro -->
+    <link href="../IMAGENES/faviconDark.svg" rel="icon" media="(prefers-color-scheme: dark)">
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/colores.css">
+    <link rel="stylesheet" href="../CSS/textos&botones.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Iniciar sesión | Cloud Vista Lodge</title>
+</head>
+
+<body>
+    <div class="containerLogin">
+        <img src="../MEDIA/logo01.svg" alt="Cloud Vista Lodge Logo">
+
+        <form class="formInput">
+            <div class="inputSingle">
+                <label class="S2 White" for="in-txt-user">Usuario</label>
+                <input type="text" name="name" placeholder="Ingresa tu usuario" class="input Large Black B-White" id="in-txt-user">
+            </div>
+
+            <div class="inputSingle">
+                <label class="S2 White" for="in-txt-pass">Contraseña</label>
+                <input type="password" name="password" placeholder="Ingresa tu contraseña" class="input Large Black B-White" id="in-txt-pass">
+            </div>
+        </form>
+
+        <a>
+            <button class="CTA-285" id="btn-login">Iniciar sesión</button>
+        </a>
+    </div>
+
+    <footer class="footerIntro">
+        <p class="Mini White">Todos los derechos reservados. 2025</p>
+    </footer>
+
+    <script src="js/login.js"> </script>
+
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</body>
+
+</html>
