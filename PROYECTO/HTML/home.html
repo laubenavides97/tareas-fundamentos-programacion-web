@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon para el modo claro -->
+    <link href="../IMAGENES/faviconLight.svg" rel="icon" media="(prefers-color-scheme: light)">
+    <!-- Favicon para el modo oscuro -->
+    <link href="../IMAGENES/faviconDark.svg" rel="icon" media="(prefers-color-scheme: dark)">
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <!-- testimonial hojas de estilo  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/colores.css">
+    <link rel="stylesheet" href="../CSS/textos&botones.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <title data-translate="title">Inicio | Cloud Vista Lodge</title>
+</head>
+
+<body class="B-White">
+    <header class="B-White">
+        <a href="home.html"><img src="../MEDIA/logo02-Black.svg" alt=""></a>
+
+        <nav>
+            <ul class="opcionesMenu">
+                <li><a href="home.html" class="MenuSelected" data-translate="MenuOption1">Inicio</a></li>
+                <li><a href="alojamiento.html" class="MenuOption" data-translate="MenuOption2">Alojamiento</a></li>
+                <li><a href="amenidades.html" class="MenuOption" data-translate="MenuOption3">Amenidades</a></li>
+                <li><a href="nosotros.html" class="MenuOption" data-translate="MenuOption4">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+
+        <ul class="opcionesMenuDerecha">
+            <li><a href="reserva.html" class="CTA-Hug" data-translate="Boton01">Reservar</a></li>
+            <li class="containerSwitchIdioma">
+                <span class="Large Black">ES</span>
+                <label class="language-switch" for="languageSwitch">
+                    <!-- control checkbox -->
+                    <input type="checkbox" id="languageSwitch" onclick="changeLanguage()">
+                    <!-- slider del control -->
+                    <span class="slider round"></span>
+                </label>
+                <span class="Large Black">EN</span>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <img src="../MEDIA/logoHero.svg" alt="">
+                <span class="S1 White" data-translate="T01">Tu refugio en Santa María de Dota</span>
+                <a href="#seccion02"><span class="material-symbols-light--arrow-circle-down-outline"></span></a>
+            </div>
+        </section>
+
+        <section class="text" id="seccion02">
+            <span class="H1 Black" data-translate="T02">Agenda tu escapada perfecta</span>
+            <span class="col-6 Large Black" data-translate="T03">Enclavado entre las montañas de Santa María de Dota, nuestro hotel ofrece una experiencia única de tranquilidad, confort y conexión con la naturaleza. Disfruta de vistas impresionantes, aire puro y una estadía diseñada para renovar cuerpo y mente.</span>
+            <button class="CTA-Hug" data-translate="Boton02">Reservar ahora</button>
+        </section>
+
+        <section class="text-picture">
+            <div class="description">
+                <span class="MiniCaps Blue" data-translate="T04">Nuestro alojamiento</span>
+                <span class="H1 Black" data-translate="T05">Descubre nuestras habitaciones y nuestras villas</span>
+                <span class="Large Black" data-translate="T06">Vive una experiencia única de alojamiento en nuestras acogedoras villas y elegantes suites. Cada espacio combina comodidad, privacidad y una conexión directa con la naturaleza de Santa María de Dota. Ya sea que busques relajarte junto a la chimenea o despertar con una vista espectacular, aquí encontrarás el refugio perfecto en la montaña.</span>
+                <a href="alojamiento.html"> <button class="CTA-Hug" data-translate="Boton03">Descubrir más</button> </a>
+            </div>
+
+            <img class="containerImagen" src="../MEDIA/img02.png" alt="">
+        </section>
+
+        <section class="text-picture">
+            <img class="containerImagen" src="../MEDIA/img03.png" alt="">
+
+            <div class="description">
+                <span class="MiniCaps Blue" data-translate="T07">Nuestras actividades</span>
+                <span class="H1 Black" data-translate="T08">Disfruta tu estadía</span>
+                <span class="Large Black" data-translate="T09">En Cloud Vista Lodge, la aventura y la naturaleza te esperan a cada paso. Disfruta de cabalgatas, caminatas guiadas, canopy y recorridos nocturnos bajo las estrellas. Ya sea que busques adrenalina o conexión con el entorno, tenemos la actividad perfecta para ti.</span>
+                <a href="alojamiento.html"> <button class="CTA-Hug" data-translate="Boton03">Descubrir más</button> </a>
+            </div>
+        </section>
+
+        <section class="carrusel">
+            <span class="H1 Black" data-translate="T10">Lo que dicen nuestros huéspedes</span>
+
+            <div class="containerCards owl-carousel">
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T11"> Un lugar mágico, perfecto para desconectar y respirar aire puro.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review01.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Valeria</span>
+                            <span class="Large White" data-translate="T12">29 años, Costa Rica</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T13">La vista desde nuestra villa era simplemente espectacular.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review02.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Camila</span>
+                            <span class="Large White" data-translate="T14">34 años, Argentina</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T15">La atención del personal fue cálida y excepcional.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review03.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Lukas</span>
+                            <span class="Large White" data-translate="T16">30 años, Alemania</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T17">Nos sentimos como en casa, pero rodeados de montañas.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review04.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Luis</span>
+                            <span class="Large White" data-translate="T18">36 años, México</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T19">Cada rincón del hotel transmite paz y belleza natural.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review05.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Sofía</span>
+                            <span class="Large White" data-translate="T20">22 años, España</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T21">Las caminatas guiadas fueron una experiencia inolvidable.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review06.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Jonas</span>
+                            <span class="Large White" data-translate="T22">28 años, Estados Unidos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T23">Ideal para una escapada romántica o en familia.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review07.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Mateo</span>
+                            <span class="Large White" data-translate="T24">24 años, España</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T25">Dormir con el sonido del bosque fue maravilloso.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review08.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Anna</span>
+                            <span class="Large White" data-translate="T26">26 años, Alemania</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T27">Volveremos sin duda alguna, superó nuestras expectativas.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review09.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Aurora</span>
+                            <span class="Large White" data-translate="T28">31 años, Italia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T29">La chimenea en la habitación fue el toque perfecto.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review10.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Daniela</span>
+                            <span class="Large White" data-translate="T30">37 años, Argentina</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardCarrusel B-Blue">
+                    <div class="review">
+                        <span class="H1 LightBlue">“</span>
+                        <span class="revText S2 White" data-translate="T31">Santa María de Dota es un paraíso, y este hotel lo complementa perfectamente.</span>
+                    </div>
+
+                    <div class="persona">
+                        <img src="../MEDIA/review11.png" alt="" class="imgReview">
+                        <div class="personaText">
+                            <span class="S2 White">Natalia</span>
+                            <span class="Large White" data-translate="T32">25 años, España</span>
+                        </div>
+                    </div>
+                </div>           
+                
+            </div>
+        </section>
+
+        <section class="text">
+            <span class="H1 Black" data-translate="T33">Empieza tu aventura en la montaña</span>
+            <span class="col-6 Large Black" data-translate="T34">Explora todo lo que Cloud Vista Lodge tiene para ofrecerte y reserva hoy tu estadía. Vive la experiencia de descanso, naturaleza y aventura en el corazón de Santa María de Dota. ¡Tu refugio te espera!</span>
+            <button class="CTA-Hug" data-translate="Boton02">Reservar ahora</button>
+        </section>
+    </main>
+    <footer class="footerWebSite B-Blue">
+        <a href="home.html"><img src="../MEDIA/logoFooter.svg" alt="Logo de Cloud Vista Lodge"></a>
+        <div class="containerFooter">
+            <div class="containerInfo">
+                <div class="Info01">
+                    <span class="S2-bold White" data-translate="F01">Ubicación</span>
+                    <span class="Large White" data-translate="F02">Santa María de Dota, San José, Costa Rica</span>
+                </div>
+                <div class="Info02">
+                    <span class="S2-bold White" data-translate="F03">Contacto</span>
+                    <span class="Large White" data-translate="F04">Teléfono: +506 2274-7625</span>
+                    <span class="Large White" data-translate="F05">E-mail: info@cloudvista.com</span>
+                </div>
+                <div class="Info">
+                    <span class="S2-bold White" data-translate="F06">Explora</span>
+                    <a href="alojamiento.html" class="Large White" data-translate="F07">Alojamiento</a>
+                    <a href="amenidades.html" class="Large White" data-translate="F08">Amenidades</a>
+                    <a href="nosotros.html" class="Large White" data-translate="F09">Sobre nosotros</a>
+                    <a href="#" class="Large White" data-translate="F10">Contáctanos</a>
+                </div>
+                <div class="Info">
+                    <span class="S2-bold White" data-translate="F11">Síguenos</span>
+                    <span class="Large White">Facebook</span>
+                    <span class="Large White">Instagram</span>
+                    <span class="Large White">X</span>
+                </div>
+            </div>
+
+            <div class="containerTerminos">
+                <span class="Mini White">©Cloud Vista Lodge 2025</span>
+                <span class="Mini White" data-translate="F12">Todos los derechos reservados</span>
+                <span class="Mini White" data-translate="F13">Términos y condiciones</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="../JS/traductor.js"></script>
+
+    <!-- CARGA JS SCRIPT TESTIMONIAL -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js " integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <!-- CONFIGURACION TESTIMONIAL JS -->
+    <script>
+        //clase privada de la libreria
+        $('.owl-carousel').owlCarousel({
+            //ciclo
+            loop: true,
+
+            //margen entre las fotos
+            margin: 30,
+
+            //navegación con flechas con valor true
+            nav: true,
+            navText: ['<span class="material-symbols-light--arrow-back-ios-new"></span>', '<span class="material-symbols-light--arrow-forward-ios"></span>'],
+
+            //agrega radios de navegación con valor true
+            dots: false, 
+
+            //sse autoejectuca al iniciar con valor true
+            autoplay: true, 
+
+            autoplayTimeout: 5000,
+
+            //parte responsive de los dispositivos
+            responsive: {
+                0: {
+                    items: 1
+                }, 
+                768: {
+                    items: 2
+                },
+                1128: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

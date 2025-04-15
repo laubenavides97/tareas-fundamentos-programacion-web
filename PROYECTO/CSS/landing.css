@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 
-.containerLogin {
+.containerLanding {
     display: flex;
     padding-bottom: 2.5rem;
     flex-direction: column;
@@ -22,29 +22,8 @@ body {
     flex-shrink: 0;
 }
 
-.formInput {
+.containerBotones {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 2.5rem;
-}
-
-.inputSingle {
-    display: flex;
-    width: 21.375rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-}
-
-.input{
-    display: flex;
-    width: 21.375rem;
-    padding: 0.625rem 0.875rem;
-    align-items: center;
-    border: none;
-}
-
-.input::placeholder{
-    color: var(--DarkGray);
+    gap: 5rem;
 }
