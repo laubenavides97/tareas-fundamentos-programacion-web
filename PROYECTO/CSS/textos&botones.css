@@ -82,7 +82,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: 1.4375rem;
-    letter-spacing: -0.04125rem;
+    letter-spacing: -0.02rem;
 }
 
 .H2 {
@@ -91,7 +91,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 1.8125rem;
-    letter-spacing: -0.07313rem;
+    letter-spacing: -0.02rem;
 }
 
 .H1 {
@@ -99,8 +99,8 @@
     font-size: 2.875rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 2rem;
-    letter-spacing: -0.08625rem;
+    line-height: 2.375rem;
+    letter-spacing: -0.02rem;
 }
 
 .Huge {
@@ -212,19 +212,7 @@
     border-bottom: 1px solid var(--Black);
 }
 
-.MenuSelected {
-    display: inline-flex;
-    padding: 0.25rem 0.75rem;
-    justify-content: center;
-    align-items: center;
-    color: var(--Black);
-    text-align: center;
-    font-family: var(--DMSans);
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: -0.03rem;
+#MenuSelected {
     border-bottom: 1px solid var(--Black);
 }
 

@@ -7,6 +7,9 @@
 
 body {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 main {
@@ -111,8 +114,8 @@ main {
 }
 
 .owl-nav {
-    width: 100px;
-    height: 60px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .cardCarrusel {
@@ -123,8 +126,10 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border-radius: 15px;
+    border-radius: 2px;
     margin: 0 auto;
+    border: 1px solid var(--LightGray);
+
 }
 
 .review {
@@ -152,7 +157,6 @@ main {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 200px;
-    border: 2px solid var(--White);
 }
 
 .personaText {
