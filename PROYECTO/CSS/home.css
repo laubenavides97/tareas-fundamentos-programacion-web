@@ -114,8 +114,11 @@ main {
 }
 
 .owl-nav {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 20px;
+    gap: 60px;
 }
 
 .cardCarrusel {

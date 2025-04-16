@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Favicon para el modo claro -->
-        <link href="../IMAGENES/faviconLight.svg" rel="icon" media="(prefers-color-scheme: light)">
-        <!-- Favicon para el modo oscuro -->
-        <link href="../IMAGENES/faviconDark.svg" rel="icon" media="(prefers-color-scheme: dark)">
-        <!-- Tipografía -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
-        <!-- Hojas de estilo-->
-        <link rel="stylesheet" href="../CSS/colores.css">
-        <link rel="stylesheet" href="../CSS/textos&botones.css">
-        <link rel="stylesheet" href="../CSS/header.css">
-        <link rel="stylesheet" href="../CSS/footer.css">
-        <link rel="stylesheet" href="../CSS/alojamiento.css">
-        <title data-translate="title">Alojamiento | Cloud Vista Lodge</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon para el modo claro -->
+    <link href="../IMAGENES/faviconLight.svg" rel="icon" media="(prefers-color-scheme: light)">
+    <!-- Favicon para el modo oscuro -->
+    <link href="../IMAGENES/faviconDark.svg" rel="icon" media="(prefers-color-scheme: dark)">
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&display=swap"
+        rel="stylesheet">
+    <!-- Owl carousel hojas de estilo  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Hojas de estilo-->
+    <link rel="stylesheet" href="../CSS/colores.css">
+    <link rel="stylesheet" href="../CSS/textos&botones.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/alojamiento.css">
+    <title data-translate="title">Alojamiento | Cloud Vista Lodge</title>
+</head>
+
 <body class="B-White">
     <header class="B-White">
         <a href="home.html"><img src="../MEDIA/logo02-Black.svg" alt=""></a>
@@ -48,7 +60,32 @@
     </header>
 
     <main>
+        <section class="hero">
+            <div>
+                <span class="Huge White">Alojamiento</span>
+                <span class="S1 White">Descansa entre las nubes y el bosque</span>
+                <a href="#seccion02"><span class="material-symbols-light--arrow-circle-down-outline"></span></a>
+            </div>
+        </section>
+
+        <!-- TABS -->
+        <section class="rooms" id="seccion02">
+            <button class="CTA-Hug tablinks" onclick="opciones(event, 'villa01')">Villa de Los Cedros</button>
+            <button class="CTA-Hug tablinks" onclick="opciones(event, 'villa02')">Villa Las Brumas</button>
+            <button class="CTA-Hug tablinks" onclick="opciones(event, 'villa03')">Villa El Jardín</button>
+            <button class="CTA-Hug tablinks" onclick="opciones(event, 'suite01')">Suite Deluxe</button>
+            <button class="CTA-Hug tablinks" onclick="opciones(event, 'suite02')">Suite Grand Deluxe</button>
+        </section>
+
+        <!-- Secciones de las tabs -->
+        <section id="villa01" class="tabcontent"></section>
+        <section id="villa02" class="tabcontent"></section>
+        <section id="villa03" class="tabcontent"></section>
+        <section id="suite01" class="tabcontent"></section>
+        <section id="suite02" class="tabcontent"></section>
+
         
+
     </main>
 
     <footer class="footerWebSite B-Blue">
@@ -56,23 +93,23 @@
         <div class="containerFooter">
             <div class="containerInfo">
                 <div class="Info01">
-                    <span class="S2-bold White" data-translate="F01">Ubicación</span>
-                    <span class="Large White" data-translate="F02">Santa María de Dota, San José, Costa Rica</span>
+                    <span class="S2-bold White">Ubicación</span>
+                    <span class="Large White">Santa María de Dota, San José, Costa Rica</span>
                 </div>
                 <div class="Info02">
-                    <span class="S2-bold White" data-translate="F03">Contacto</span>
-                    <span class="Large White" data-translate="F04">Teléfono: +506 2274-7625</span>
-                    <span class="Large White" data-translate="F05">E-mail: info@cloudvista.com</span>
+                    <span class="S2-bold White">Contacto</span>
+                    <span class="Large White">Teléfono: +506 2274-7625</span>
+                    <span class="Large White">E-mail: info@cloudvista.com</span>
                 </div>
                 <div class="Info">
-                    <span class="S2-bold White" data-translate="F06">Explora</span>
-                    <a href="alojamiento.html" class="Large White" data-translate="F07">Alojamiento</a>
-                    <a href="amenidades.html" class="Large White" data-translate="F08">Amenidades</a>
-                    <a href="nosotros.html" class="Large White" data-translate="F09">Sobre nosotros</a>
-                    <a href="#" class="Large White" data-translate="F10">Contáctanos</a>
+                    <span class="S2-bold White">Explora</span>
+                    <a href="alojamiento.html" class="Large White">Alojamiento</a>
+                    <a href="amenidades.html" class="Large White">Amenidades</a>
+                    <a href="nosotros.html" class="Large White">Sobre nosotros</a>
+                    <a href="#" class="Large White">Contáctanos</a>
                 </div>
                 <div class="Info">
-                    <span class="S2-bold White" data-translate="F11">Síguenos</span>
+                    <span class="S2-bold White">Síguenos</span>
                     <span class="Large White">Facebook</span>
                     <span class="Large White">Instagram</span>
                     <span class="Large White">X</span>
@@ -81,13 +118,47 @@
 
             <div class="containerTerminos">
                 <span class="Mini White">©Cloud Vista Lodge 2025</span>
-                <span class="Mini White" data-translate="F12">Todos los derechos reservados</span>
-                <span class="Mini White" data-translate="F13">Términos y condiciones</span>
+                <span class="Mini White">Todos los derechos reservados</span>
+                <span class="Mini White">Términos y condiciones</span>
             </div>
         </div>
 
     </footer>
+
     <script src="../JS/interactividadMenu.js"></script>
-    
+    <script src="../JS/baseDatosAlojamiento.js"></script>
+    <script src="../JS/tabs.js"></script>
+
+    <!-- CARGA JS SCRIPT OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script>
+        //clase privada de la libreria
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+
+            //ciclo
+            loop: true,
+
+            //navegación con flechas con valor true
+            nav: true,
+            navText: ['<span class="material-symbols-light--arrow-back-ios-new"></span>', '<span class="material-symbols-light--arrow-forward-ios"></span>'],
+
+            //agrega radios de navegación con valor true
+            dots: false,
+
+            //se autoejectuca al iniciar con valor true
+            autoplay: false,
+        })
+    </script>
+
+
 </body>
+
 </html>
