@@ -103,7 +103,7 @@
     letter-spacing: -0.15rem;
 }
 
-/*---------------------Buttons*/
+/*--------------------- Botones*/
 .CTA-285 {
     display: flex;
     width: 17.8125rem;
@@ -187,7 +187,6 @@
     background: var(--Blue);
 }
 
-
 .MenuOption {
     display: inline-flex;
     padding: 0.25rem 0.75rem;
@@ -214,7 +213,30 @@
     border-bottom: 1px solid var(--Black);
 }
 
-/* Pop Ups Sweet Alert*/
+/*--------------------- Inputs*/
+.emailSuscripcion{
+    display: flex;
+width: 580px;
+padding: 10px 14px;
+align-items: center;
+border: none;
+background-color: transparent;
+border: 1px solid var(--LightBlue);
+border-bottom: 1px solid var(--Black, #0C0C0D);
+}
+
+.emailSuscripcion::placeholder{
+    color: var(--DarkGray);
+}
+
+.emailSuscripcion:focus{
+    outline: none;
+    border: 1px solid var(--Blue);
+    background-color: var(--White);
+
+}
+
+/*--------------------- Pop Ups Sweet Alert*/
 .popup {
     background-color: var(--White);
     border-radius: 0.9375rem;
@@ -231,7 +253,6 @@ body.swal2-shown {
     position: static;
     overflow: visible;
 }
-
 
 /*----------------- Íconos */
 /* Flecha en círculo hacia abajo, hero seccion*/

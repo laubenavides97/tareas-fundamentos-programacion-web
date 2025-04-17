@@ -44,6 +44,10 @@ const translations = {
         T32: "25 años, España",
         T33: "Empieza tu aventura en la montaña",
         T34: "Explora todo lo que Cloud Vista Lodge tiene para ofrecerte y reserva hoy tu estadía. Vive la experiencia de descanso, naturaleza y aventura en el corazón de Santa María de Dota. ¡Tu refugio te espera!",
+        T35: 'Suscríbete y entérate de todo',
+        T36: 'Recibe noticias, promociones exclusivas y consejos para tu próxima escapada a la montaña, directamente en tu correo.',
+        T37: 'Ingresa tu correo electrónico',
+        Boton04: 'Quiero recibir noticias',
         F01: "Ubicación",
         F02: "Santa María de Dota, San José, Costa Rica",
         F03: "Contacto",
@@ -57,6 +61,10 @@ const translations = {
         F11: "Síguenos",
         F12: "Todos los derechos reservados",
         F13: "Términos y condiciones",
+        empty_email: "El campo email está vacío",
+        invalid_email: "Email inválido",
+        success_email: "Su registro fue exitoso",
+        error_email: "Error al enviar el formulario. Inténtalo de nuevo.",
     },
     //objetos de idioma ingles
     en: {
@@ -102,6 +110,10 @@ const translations = {
         T32: "25 years old, Spain",
         T33: "Start your mountain adventure",
         T34: "Explore everything Cloud Vista Lodge has to offer and book your stay today. Experience rest, nature, and adventure in the heart of Santa María de Dota. Your retreat awaits!",
+        T35: 'Subscribe and stay updated',
+        T36: 'Get news, exclusive promotions, and tips for your next mountain getaway delivered straight to your inbox.',
+        T37: 'Enter your email address',
+        Boton04: 'I want to receive updates',
         F01: "Location",
         F02: "Santa Maria de Dota, San Jose, Costa Rica",
         F03: "Contact",
@@ -114,7 +126,11 @@ const translations = {
         F10: "Contact Us",
         F11: "Follow Us",
         F12: "All rights reserved",
-        F13: "Terms and Conditions"
+        F13: "Terms and Conditions",
+        empty_email: "The email field is empty",
+        invalid_email: "Invalid email",
+        success_email: "Subscription successful",
+        error_email: "There was an error sending the form. Please try again."
     }
 };
 
@@ -131,5 +147,13 @@ function changeLanguage() {
         const key = element.getAttribute('data-translate');
         //elementos html sean traducidos por la llaves lang - key
         element.innerHTML = translations[lang][key];
+    });
+
+    // Traducir placeholders
+    document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-translate-placeholder');
+        if (translations[lang][key]) {
+            element.placeholder = translations[lang][key];
+        }
     });
 }

@@ -266,6 +266,17 @@
             <span class="col-6 Large Black" data-translate="T34">Explora todo lo que Cloud Vista Lodge tiene para ofrecerte y reserva hoy tu estadía. Vive la experiencia de descanso, naturaleza y aventura en el corazón de Santa María de Dota. ¡Tu refugio te espera!</span>
             <a href="reserva.html"><button class="CTA-Hug" data-translate="Boton02">Reservar ahora</button></a>
         </section>
+
+        <section class="formSuscripcion B-LightBlue">
+            <form id="formSuscripcion">
+                <span class="H1 Black" data-translate="T35">Suscríbete y entérate de todo</span>
+                <span class="S1 Black" data-translate="T36">Recibe noticias, promociones exclusivas y consejos para tu próxima escapada a la montaña, directamente en tu correo.</span>
+                <input type="email" name="user_email" id="inscriptionEmail" placeholder="Ingresa tu correo electrónico" required class="emailSuscripcion Large Black" data-translate-placeholder="T37"/>
+                <button type="button" id="btnSend" class="CTA-Hug" data-translate="Boton04">Quiero recibir noticias</button>
+                <div class="mensaje Large" id="alertaForm"></div>
+            </form>
+            <img src="../MEDIA/faviconDark.svg" alt="" class="faviconForm">
+        </section>
     </main>
 
     <footer class="footerWebSite B-Blue">
@@ -307,6 +318,9 @@
 
     <script src="../JS/traductor.js"></script>
     <script src="../JS/interactividadMenu.js"></script>
+    <script src="../JS/formSuscripcion.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
 
     <!-- CARGA JS SCRIPT TESTIMONIAL -->
 
