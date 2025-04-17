@@ -18,7 +18,6 @@ main {
     align-items: center;
     gap: 20px;
     width: 100%;
-    padding-bottom: 80px;
 }
 
 /* SECTION 1: HERO */
@@ -63,7 +62,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 104px;
-    padding-top: 40px;
+    padding: 40px 0px 40px 0px;
 }
 
 .containerCarrusel {
@@ -72,13 +71,13 @@ main {
     align-items: center;
     width: 896px;
     height: 562px;
-    border-radius: 20px;
+    border-radius: 2px;
 }
 
 .imgTabs {
     width: 896px;
     height: 562px;
-    border-radius: 20px;
+    border-radius: 2px;
     object-fit: cover;
 
 }
@@ -142,4 +141,80 @@ main {
 
 .descripcionAmenidad {
     width: 316px;
+}
+
+/*SECCIÓN: Form encuesta*/
+.formEncuesta {
+    width: 100%;
+    display: flex;
+    padding: 60px 156px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    position: relative;
+    object-fit: cover;
+    gap: 48px;
+    z-index: 1;
+    
+}
+
+.tituloEncuesta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    gap: 32px;
+    width: 580px;
+}
+
+#formEncuesta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.contLarge {
+    width: 463px;
+}
+
+.containerFieldset {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.preguntasFieldset {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 32px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.containerOtrasPreg {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 32px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.faviconForm {
+    width: 580px;
+    height: auto;
+    position: absolute;
+    right: -10px;
+    top: -100px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
 }

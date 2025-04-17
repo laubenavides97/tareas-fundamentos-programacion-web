@@ -83,6 +83,165 @@
         <section id="villa03" class="tabcontent"></section>
         <section id="suite01" class="tabcontent"></section>
         <section id="suite02" class="tabcontent"></section>
+
+        <!-- Encuesta -->
+
+        <section class="formEncuesta B-LightBlue">
+            <div class="tituloEncuesta">
+                <span class="H1 Black">¿Te has hospedado con nosotros?</span>
+                <span class="S1 Black">Tu opinión nos ayuda a mejorar y brindar un mejor servicio. Esta encuesta toma
+                    solo 2 minutos.</span>
+            </div>
+
+            <form id="formEncuesta" action="#" method="POST">
+                <!-- Pregunta 1 -->
+                <div class="containerPregunta">
+                    <label for="overall-rating" class="Large Black">¿Cómo calificarías tu experiencia general en el
+                        hotel?</label>
+                    <select id="overall-rating" name="overall_rating" required class="select Large Black">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="1">⭐️ 1 estrella</option>
+                        <option value="2">⭐️⭐️ 2 estrellas</option>
+                        <option value="3">⭐️⭐️⭐️ 3 estrellas</option>
+                        <option value="4">⭐️⭐️⭐️⭐️ 4 estrellas</option>
+                        <option value="5">⭐️⭐️⭐️⭐️⭐️ 5 estrellas</option>
+                    </select>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <fieldset class="containerFieldset">
+                    <span class="Large Black">¿Qué tan satisfecho(a) estuviste con los siguientes aspectos?</span>
+
+                    <div class="preguntasFieldset">
+                        <div class="containerPregunta">
+                            <label for="cleanliness" class="Large Black">Limpieza del alojamiento</label>
+                            <select id="cleanliness" name="cleanliness" class="select Large Black">
+                                <option valuse="" disabled selected>Selecciona</option>
+                                <option value="1">Muy insatisfecho</option>
+                                <option value="2">Insatisfecho</option>
+                                <option value="3">Neutral</option>
+                                <option value="4">Satisfecho</option>
+                                <option value="5">Muy satisfecho</option>
+                            </select>
+                        </div>
+
+                        <div class="containerPregunta">
+                            <label for="comfort" class="Large Black">Comodidad de la habitación</label>
+                            <select id="comfort" name="comfort" class="select Large Black">
+                                <option value="" disabled selected>Selecciona</option>
+                                <option value="1">Muy insatisfecho</option>
+                                <option value="2">Insatisfecho</option>
+                                <option value="3">Neutral</option>
+                                <option value="4">Satisfecho</option>
+                                <option value="5">Muy satisfecho</option>
+                            </select>
+                        </div>
+
+                        <div class="containerPregunta">
+                            <label for="staff" class="Large Black">Atención del personal</label>
+                            <select id="staff" name="staff" class="select Large Black">
+                                <option value="" disabled selected>Selecciona</option>
+                                <option value="1">Muy insatisfecho</option>
+                                <option value="2">Insatisfecho</option>
+                                <option value="3">Neutral</option>
+                                <option value="4">Satisfecho</option>
+                                <option value="5">Muy satisfecho</option>
+                            </select>
+                        </div>
+
+                        <div class="containerPregunta">
+                            <label for="food" class="Large Black">Calidad de los alimentos (si aplicó)</label>
+                            <select id="food" name="food" class="select Large Black">
+                                <option value="" disabled selected>Selecciona</option>
+                                <option value="1">Muy insatisfecho</option>
+                                <option value="2">Insatisfecho</option>
+                                <option value="3">Neutral</option>
+                                <option value="4">Satisfecho</option>
+                                <option value="5">Muy satisfecho</option>
+                            </select>
+                        </div>
+
+                        <div class="containerPregunta">
+                            <label for="activities" class="Large Black">Actividades o tours ofrecidos</label>
+                            <select id="activities" name="activities" class="select Large Black">
+                                <option value="" disabled selected>Selecciona</option>
+                                <option value="1">Muy insatisfecho</option>
+                                <option value="2">Insatisfecho</option>
+                                <option value="3">Neutral</option>
+                                <option value="4">Satisfecho</option>
+                                <option value="5">Muy satisfecho</option>
+                            </select>
+                        </div>
+
+                        <div class="containerPregunta">
+                            <label for="value" class="Large Black">Relación calidad-precio</label>
+                            <select id="value" name="value" class="select Large Black">
+                                <option value="" disabled selected>Selecciona</option>
+                                <option value="1">Muy insatisfecho</option>
+                                <option value="2">Insatisfecho</option>
+                                <option value="3">Neutral</option>
+                                <option value="4">Satisfecho</option>
+                                <option value="5">Muy satisfecho</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="containerOtrasPreg">
+                    <!-- Pregunta 3 -->
+                    <div class="containerPregunta contLarge">
+                        <label for="liked" class="Large Black">¿Qué fue lo que más disfrutaste durante tu
+                            estadía?</label>
+                        <textarea id="liked" name="liked" rows="3" class="TextA Large Black"
+                            placeholder="Tu respuesta..."></textarea>
+                    </div>
+
+
+                    <!-- Pregunta 4 -->
+                    <div class="containerPregunta contLarge">
+                        <label for="improve" class="Large Black">¿Hubo algo que no cumplió tus expectativas o que
+                            podríamos
+                            mejorar?</label>
+                        <textarea id="improve" name="improve" rows="3" class="TextA Large Black"
+                            placeholder="Tu respuesta..."></textarea>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="containerPregunta contLarge">
+                        <label class="Large Black">¿Nos recomendarías a amigos o familiares?</label>
+                        <div>
+                            <input type="radio" id="recom-si" name="recommend" value="sí">
+                            <label for="recom-si" class="Large Black">Sí</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="recom-no" name="recommend" value="no">
+                            <label for="recom-no" class="Large Black">No</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="recom-talvez" name="recommend" value="tal vez">
+                            <label for="recom-talvez" class="Large Black">Tal vez</label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 6 -->
+                    <div class="containerPregunta contLarge">
+                        <label for="testimonial" class="Large Black">¿Quieres dejar un testimonio para compartir en
+                            nuestra web o redes sociales?</label>
+                        <textarea id="testimonial" name="testimonial" rows="3" class="TextA Large Black"
+                            placeholder="Escribe tu testimonio aquí..."></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="allow-publish" name="allow_publish" value="sí">
+                    <label for="allow-publish" class="Large Black">Autorizo que mi testimonio sea
+                        publicado</label>
+                </div>
+                <button type="submit" class="CTA-Hug">Enviar encuesta</button>
+            </form>
+            
+            <img src="../MEDIA/faviconDark.svg" alt="" class="faviconForm">
+        </section>
     </main>
 
     <footer class="footerWebSite B-Blue">

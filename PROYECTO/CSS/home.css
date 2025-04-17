@@ -113,7 +113,7 @@ main {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     gap: 60px;
 }
 
@@ -175,30 +175,28 @@ main {
     align-items: flex-start;
     position: relative;
     object-fit: cover;
+    margin-top: 40px;
 }
 
 #formSuscripcion {
     display: flex;
     width: 580px;
-flex-direction: column;
-align-items: flex-start;
-gap: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
 }
 
 
-.faviconForm{
-    display: flex;
-width: 587.797px;
-height: 578px;
-justify-content: center;
-align-items: center;
-aspect-ratio: 587.80/578.00;
-position: absolute;
-right: 0.203px;
-top: -100px;
-opacity: 0.3;
+.faviconForm {
+    width: 580px;
+    height: auto;
+    position: absolute;
+    right: -10px;
+    top: -100px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
 }
-
 .alertaVerde {
     color: var(--GreenSuccess);
 }
