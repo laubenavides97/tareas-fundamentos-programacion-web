@@ -104,6 +104,14 @@
     letter-spacing: -0.15rem;
 }
 
+.alertaVerde {
+    color: var(--GreenSuccess);
+}
+
+.alertaRoja {
+    color: var(--RedError);
+}
+
 /*--------------------- Botones*/
 .CTA-285 {
     display: flex;
@@ -222,7 +230,7 @@
     align-items: center;
     border: none;
     background-color: transparent;
-    border: 1px solid var(--LightBlue);
+    border: 1px solid transparent;
     border-bottom: 1px solid var(--Black, #0C0C0D);
 }
 
@@ -249,7 +257,7 @@
     padding: 10px 8px;
     border: none;
     background-color: var(--White70);
-    border: 1px solid var(--LightBlue);
+    border: 1px solid transparent;
     border-bottom: 1px solid var(--Black, #0C0C0D);
 }
 
@@ -263,7 +271,7 @@
     background-color: var(--White);
 }
 
-.TextA{
+.TextA {
     padding: 10px 8px;
     width: 463px;
     resize: vertical;
@@ -280,10 +288,24 @@
     background-color: var(--White);
 }
 
+.containerRadio {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+input[type="radio"] {
+    accent-color: var(--Blue);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
 /*--------------------- Pop Ups Sweet Alert*/
 .popup {
     background-color: var(--White);
-    border-radius: 0.9375rem;
+    border-radius: 2px;
 }
 
 .lottieAlert1 {

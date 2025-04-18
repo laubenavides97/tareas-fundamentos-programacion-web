@@ -65,6 +65,9 @@ const translations = {
         invalid_email: "Email inválido",
         success_email: "Su registro fue exitoso",
         error_email: "Error al enviar el formulario. Inténtalo de nuevo.",
+        empty_title: "Espacios en blanco!",
+        invalid_title: "Verifica la información",
+        retry_button: "Intentar de nuevo",
     },
     //objetos de idioma ingles
     en: {
@@ -130,7 +133,10 @@ const translations = {
         empty_email: "The email field is empty",
         invalid_email: "Invalid email",
         success_email: "Subscription successful",
-        error_email: "There was an error sending the form. Please try again."
+        error_email: "There was an error sending the form. Please try again.",
+        empty_title: "Empty spaces!",
+        invalid_title: "Verify the information",
+        retry_button: "Try again",
     }
 };
 
