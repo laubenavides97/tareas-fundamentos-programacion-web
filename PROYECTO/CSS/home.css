@@ -45,7 +45,7 @@ main {
 .material-symbols-light--arrow-circle-down-outline {
     position: absolute;
     align-items: center;
-    bottom: 51px;
+    bottom: 68px;
 }
 
 /* SECCION 02 Y 06*/
@@ -65,12 +65,22 @@ main {
 }
 
 /* SECCION 03 Y 04*/
-.text-picture {
+.text-picture-right {
     display: flex;
-    padding: 40px 0px;
+    padding: 40px 0px 40px 156px;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 64px;
+    align-self: stretch;
+}
+
+.text-picture-left{
+    display: flex;
+    padding: 40px 156px 40px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
 }
 
 .description {
@@ -84,11 +94,12 @@ main {
 
 .containerImagen {
     display: flex;
-    justify-content: center;
+    height: 450px;
+    min-width: 547px;
+    justify-content: baseline;
     align-items: center;
-    border-radius: 2px;
-    width: 548px;
-    height: 386px;
+    flex: 1 0 0;
+    object-fit: cover;
 }
 
 /* SECCION 05: Carrusel*/

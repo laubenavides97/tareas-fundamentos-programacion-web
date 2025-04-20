@@ -56,31 +56,31 @@
     </section>
 
     <section class="contact-section">
-      <span class="H1 Black">Envíanos un mensaje</span>
-      <form id="contact-form">
+      <div class="tituloEncuesta">
+        <span class="H1 Black">Envíanos un mensaje</span>
+        <span class="S1 Black">Completa el formulario y pronto nos pondremos en contacto contigo.</span>
+    </div>
+
+      <form id="contact-form" novalidate>
         <div class="form-row">
-          <div class="form-group">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="user_name" placeholder="Ingresa tu nombre" required>
+          <div class="containerPregunta">
+            <label for="name" class="Large Black">Nombre</label>
+            <input type="text" id="name" name="user_name" placeholder="Ingresa tu nombre" class="select Large Black" required>
           </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="user_email" placeholder="Ingresa tu correo electrónico" required>
+          <div class="containerPregunta">
+            <label for="email" class="Large Black">Correo electrónico</label>
+            <input type="email" id="email" name="user_email" placeholder="Ingresa tu correo electrónico" class="select Large Black" required>
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje" required></textarea>
+        <div class="containerPregunta">
+          <label for="message" class="Large Black">Mensaje</label>
+          <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje" class="TextA Large Black" required></textarea>
         </div>
 
-        <div class="form-actions">
-          <button type="submit">Send message</button>
-        </div>
+        <button type="submit" class="CTA-Hug">Enviar mensaje</button>
       </form>
     </section>
-
-
   </main>
 
   <footer class="footerWebSite B-Blue">
@@ -129,6 +129,7 @@
   <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 
   <script src="../JS/interactividadMenu.js"></script>
+  <script src="../JS/formContacto.js" defer></script>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 

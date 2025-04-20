@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Favicon para el modo claro -->
-        <link href="../IMAGENES/faviconLight.svg" rel="icon" media="(prefers-color-scheme: light)">
-        <!-- Favicon para el modo oscuro -->
-        <link href="../IMAGENES/faviconDark.svg" rel="icon" media="(prefers-color-scheme: dark)">
-        <!-- Tipografía -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
-        <!-- Hojas de estilo-->
-        <link rel="stylesheet" href="../CSS/colores.css">
-        <link rel="stylesheet" href="../CSS/textos&botones.css">
-        <link rel="stylesheet" href="../CSS/header.css">
-        <link rel="stylesheet" href="../CSS/footer.css">
-        <link rel="stylesheet" href="../CSS/nosotros.css">
-        <title data-translate="title">Nosotros | Cloud Vista Lodge</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon para el modo claro -->
+    <link href="../IMAGENES/faviconLight.svg" rel="icon" media="(prefers-color-scheme: light)">
+    <!-- Favicon para el modo oscuro -->
+    <link href="../IMAGENES/faviconDark.svg" rel="icon" media="(prefers-color-scheme: dark)">
+    <!-- testimonial hojas de estilo  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&display=swap"
+        rel="stylesheet">
+    <!-- Hojas de estilo-->
+    <link rel="stylesheet" href="../CSS/colores.css">
+    <link rel="stylesheet" href="../CSS/textos&botones.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/nosotros.css">
+    <title data-translate="title">Nosotros | Cloud Vista Lodge</title>
+</head>
+
 <body class="B-White">
     <header class="B-White">
         <a href="home.html"><img src="../MEDIA/logo02-Black.svg" alt=""></a>
@@ -47,7 +59,116 @@
         </ul>
     </header>
 
-    <main></main>
+    <main>
+        <section class="hero">
+            <div>
+                <span class="Huge White">Sobre nosotros</span>
+            </div>
+        </section>
+
+        <section class="ftco-counter contador" id="section-counter">
+            <span class="H1 Black">Nuestra historia en números</span>
+
+            <div class="containerContador">
+                <div class="numberContainer B-White">
+                    <span class="H1 Blue number " data-number="15 ">0</span>
+                    <span class="S1 DarkGray">actividades disponibles</span>
+                </div>
+
+                <div class="numberContainer B-LightBlue">
+                    <div>
+                        <span class="H1 Blue">+</span>
+                        <span class="H1 Blue number " data-number="3200 ">0</span>
+                    </div>
+                    <span class="S1 DarkGray">huéspedes felices</span>
+                </div>
+
+                <div class="numberContainer B-White">
+                    <span class="H1 Blue number " data-number="33 ">0</span>
+                    <span class="S1 DarkGray">espacios para hospedarte</span>
+                </div>
+
+                <div class="numberContainer B-LightBlue">
+                    <div>
+                        <span class="H1 Blue">+</span>
+                        <span class="H1 Blue number " data-number="2500 ">0</span>
+                    </div>
+                    <span class="S1 DarkGray">reseñas cinco estrellas</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-picture-right">
+            <div class="description">
+                <span class="H1 Black">Misión</span>
+                <span class="Large Black">Nuestra misión es ofrecer un retiro de montaña inolvidable donde los huéspedes
+                    puedan relajarse, reconectarse con la naturaleza y sumergirse en la cultura y belleza de Santa María
+                    de Dota. A través de un servicio excepcional, prácticas sostenibles y experiencias personalizadas,
+                    buscamos crear un santuario que inspire serenidad y aventura.</span>
+            </div>
+
+            <div class="containerImagen" id="imgDerecha" onclick="ejecutar('modalVideo', 'video01')">
+                <div class="containerOpenRight">
+                    <span class="material-symbols-light--play-circle-outline"></span>
+                    <span class="Mini White">Ver video</span>
+                </div>
+            </div>
+
+
+            <!-- Modal del video -->
+            <div id="modalVideo" class="modal">
+                <span id="cerrarVideo" class="material-symbols-light--close close"
+                    onclick="ocultar('modalVideo', 'video01')"></span>
+
+                <iframe id="video01" class="modal-content-video" width="960" height="540" frameborder="0"
+                    src="https://www.youtube.com/embed/yDg2lOEYvNg?si=Hzn1dGVTrukhLtP3"
+                    allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section class="text-picture-left">
+            <div class="containerImagen" id="imgIzquierda" data-img="../MEDIA/img08.png" data-caption="Visión">
+                <div class="containerOpenLeft">
+                    <span class="Mini White">Ver imagen completa</span>
+                    <span class="material-symbols-light--arrow-outward"></span>
+                </div>
+            </div>
+
+            <div class="description">
+                <span class="H1 Black">Visión</span>
+                <span class="Large Black">
+                    Ser reconocidos como un lodge de montaña ecológico de primer nivel que celebra
+                    la armonía entre el lujo, la naturaleza y la cultura local. Nos esforzamos por crear un legado de
+                    sostenibilidad, compromiso con la comunidad y experiencias inigualables para los huéspedes,
+                    estableciendo un estándar de hospitalidad en las tierras altas de Costa Rica.
+                </span>
+            </div>
+
+            <div id="modal1" class="modal">
+                <span id="cerrarImg" class="material-symbols-light--close close"></span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </section>
+
+        <section class="contTiraFoto">
+            <span class="H1 Black">Colaboraciones que nos inspiran </span>
+
+            <div class="tiraFoto owl-carousel">
+                <img src="../MEDIA/Partner1.png" alt="" class="imgTira">
+                <img src="../MEDIA/Partner2.png" alt="" class="imgTira">
+                <img src="../MEDIA/Partner3.png" alt="" class="imgTira">
+                <img src="../MEDIA/Partner4.png" alt="" class="imgTira">
+                <img src="../MEDIA/Partner5.png" alt="" class="imgTira">
+                <img src="../MEDIA/Partner6.png" alt="" class="imgTira">
+                <img src="../MEDIA/Partner7.png" alt="" class="imgTira">
+                <img src="../MEDIA/Partner8.png" alt="" class="imgTira">
+                <img src="../MEDIA/Partner9.png" alt="" class="imgTira">
+            </div>
+        </section>
+    </main>
 
     <footer class="footerWebSite B-Blue">
         <a href="home.html"><img src="../MEDIA/logoFooter.svg" alt="Logo de Cloud Vista Lodge"></a>
@@ -67,7 +188,7 @@
                     <a href="alojamiento.html" class="Large White" data-translate="F07">Alojamiento</a>
                     <a href="amenidades.html" class="Large White" data-translate="F08">Amenidades</a>
                     <a href="nosotros.html" class="Large White" data-translate="F09">Sobre nosotros</a>
-                    <a href="#" class="Large White" data-translate="F10">Contáctanos</a>
+                    <a href="contacto.html" class="Large White" data-translate="F10">Contáctanos</a>
                 </div>
                 <div class="Info">
                     <span class="S2-bold White" data-translate="F11">Síguenos</span>
@@ -86,7 +207,63 @@
 
     </footer>
 
+    <!-- CARGA JS SCRIPT TIRA -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <!-- CARGAS JS LIBRERIAS CONTADOR NUMERICO -->
+    <!-- velocidad del contador (main.js) linea 155aprox -->
+    <script src="../JS/jquery-migrate-3.0.1.min.js "></script>
+    <script src="../JS/jquery.waypoints.min.js "></script>
+    <script src="../JS/jquery.stellar.min.js "></script>
+    <script src="../JS/jquery.animateNumber.min.js "></script>
+    <script src="../JS/bootstrap-datepicker.js "></script>
+    <script src="../JS/jquery.timepicker.min.js "></script>
+    <script src="../JS/jquery.magnific-popup.min.js "></script>
+    <script src="../JS/scrollax.min.js "></script>
+    <script src="../JS/main.js "></script>
+
+    <!-- CONFIGURACION TESTIMONIAL JS -->
+    <script>
+        //clase privada de la libreria
+        $('.owl-carousel').owlCarousel({
+            //ciclo
+            loop: true,
+
+            //margen entre las fotos
+            margin: 30,
+
+            //navegación con flechas con valor true
+            nav: false,
+
+            //agrega radios de navegación con valor true
+            dots: false,
+
+            //sse autoejectuca al iniciar con valor true
+            autoplay: true,
+
+            //parte responsive de los dispositivos
+            responsive: {
+                0: {
+                    items: 3
+                },
+                768: {
+                    items: 3
+                },
+                1128: {
+                    items: 5
+                }
+            }
+        })
+    </script>
     <script src="../JS/interactividadMenu.js"></script>
-    
+    <script src="../JS/lightboxFoto.js"></script>
+    <script src="../JS/lightboxVideo.js"></script>
 </body>
+
 </html>
