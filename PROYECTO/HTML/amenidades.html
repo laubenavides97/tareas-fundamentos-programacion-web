@@ -52,7 +52,139 @@
     </header>
 
     <main>
-        
+        <section class="hero">
+            <div>
+                <span class="Huge White">Amenidades & actividades</span>
+                <span class="S1 White">Vive la experiencia completa: confort y aventura en un solo lugar.</span>
+            </div>
+        </section>
+
+        <section class="text">
+            <span class="H1 Black">Descubre todo lo que te espera</span>
+
+            <span class="anchoDescripcion Large Black">Elige entre nuestras acogedoras amenidades o las emocionantes
+                actividades que tenemos para ti. Ya sea que busques relajarte en tu alojamiento o explorar la naturaleza
+                que nos rodea, aquí encontrarás opciones pensadas para cada tipo de viajero. ¡Comienza seleccionando lo
+                que deseas explorar!</span>
+
+            <select name="categoria" id="categoria" class="select Large Black">
+                <option value="" disabled selected>Selecciona una categoría</option>
+                <option value="amenidades">Amenidades</option>
+                <option value="actividades">Actividades</option>
+            </select>
+        </section>
+
+        <!--SECCION DE AMENIDADES-->
+        <section class="seccionCategoria" id="secAmenidades">
+            <!--BANNER DE SECCION-->
+            <div class="textBackground B-LightBlue">
+                <span class="H1 Black">Comodidad que complementa tu experiencia</span>
+                <span class="anchoDescripcion Large Black">
+                    Nuestras villas y suites están equipadas con amenidades pensadas para brindarte una estadía
+                    placentera,
+                    cómoda y llena de pequeños detalles que marcan la diferencia. Descubre todo lo que hemos preparado
+                    para que
+                    te sientas como en casa, rodeado del encanto de la montaña.
+                </span>
+            </div>
+
+            <!-- BLOQUE DE AMENIDADES-->
+            <div id="contenedorAmenidades"></div>
+
+        </section>
+
+        <!--SECCION DE ACTIVIDADES-->
+        <section class="seccionCategoria" id="secActividades">
+            <!--BANNER DE SECCION-->
+            <div class="textBackground B-LightBlue">
+                <span class="H1 Black">Aventura y conexión con la naturaleza</span>
+                <span class="anchoDescripcion Large Black">
+                    Explora lo mejor de Santa María de Dota a través de experiencias diseñadas para todos los gustos.
+                    Desde caminatas guiadas y cabalgatas, hasta emocionantes actividades al aire libre, cada aventura es
+                    una oportunidad para descubrir la magia de las montañas. ¿Listo para vivir momentos inolvidables?
+                </span>
+            </div>
+
+            <!-- BLOQUE DE ACTIVIDADES-->
+            <div id="contenedorActividades"></div>
+
+            <!-- BLOQUE DE CALCULADORA-->
+            <div class="calculadoraPrecios" id="calculadoraPrecios">
+                <div class="calculadoraFormulario">
+                    <span class="H1 Black">Cotizá tu próxima aventura</span>
+                    <span class="Large Black">
+                        Seleccioná la actividad que te interesa y la cantidad de personas para conocer el precio total.
+                        Planificá tu experiencia en Santa María de Dota con anticipación y asegurá tu espacio en las
+                        actividades que más te emocionan.
+                    </span>
+
+                    <select id="actividadSelect" class="select Large Black">
+                    </select>
+
+                    <select name="cantidadPersonas" id="cantidadPersonas" class="select Large Black">
+                        <option value="" disabled selected>Selecciona la cantidad de personas</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+
+                    <button onclick="calcularPrecio()" class="CTA-Hug">Calcular</button>
+                </div>
+
+                <div class="calculadoraResultado">
+                    <img id="imgActividad" src="../MEDIA/img09.png" alt="Imagen actividad" class="imgActividadCalc" />
+
+                    <div class="resultadoDetalle">
+                        <span class="H2 Black">Actividad</span>
+                        <span class="S1 Black">Desglose</span>
+                        <div class="contenedorDesglose">
+                            <div class="lineaDesglose">
+                                <span class="Large Black">Monto por persona:</span>
+                                <span class="Large Black" id="montoPersona">$0</span>
+                            </div>
+                            <div class="lineaDesglose">
+                                <span class="Large Black">Participantes:</span>
+                                <span class="Large Black" id="numParticipantes">0</span>
+                            </div>
+                        </div>
+                        <div class="lineaDesglose">
+                            <span class="Large-bold Black">Total (CRC):</span>
+                            <span class="Large-bold Black" id="totalCRC">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOQUE DE OTRAS ACTIVIDADES-->
+            <div class="contenedorOtrasActividades B-LightBlue" id="otrasActividades">
+
+                <div class="otrasActividades">
+                    <span class="H1 Black">Descubrí más experiencias con beneficios exclusivos</span>
+
+                    <span class="Large Black">Aprovechá tu estadía con nosotros para explorar Santa María de Dota al
+                        máximo. Como huésped del hotel, obtenés descuentos especiales en actividades externas
+                        seleccionadas: desde recorridos en viñedos y visitas culturales hasta aventuras al aire libre
+                        organizadas por aliados locales. ¡Viví la zona como un local con beneficios únicos!</span>
+                    
+                    <select id="selectorPaginas" class="select Large Black">
+                        <option value="">Explorá más:</option>
+                        <option value="https://www.coopedota.com">20% de descuento en café de Coopedota</option>
+                        <option value="https://lagunadonmanuel.com">2x1 en el pase de día a la Laguna Don Manuel</option>
+                        <option value="https://www.economyrentacar.com">10% de descuento en renta de autos en Economy</option>
+                        <option value="https://www.facebook.com/Copeyestatewinery/">15% de descuento en vinos de Copey Estate Winery</option>
+                        <option value="https://www.baccredomatic.com/es-cr">Acumulá millas al pagar con tus tarjetas del BAC</option>
+                    </select>
+
+                    <img src="../MEDIA/faviconDark.svg" alt="" class="faviconForm">
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footerWebSite B-Blue">
@@ -92,7 +224,18 @@
 
     </footer>
 
+    <script>
+        document.getElementById("selectorPaginas").addEventListener("change", function () {
+          const url = this.value;
+          if (url) {
+            window.open(url, "_blank"); // abre en nueva pestaña
+          }
+        });
+      </script>
+
+    <script src="../JS/baseDatosAmenidades.js"></script>
     <script src="../JS/interactividadMenu.js"></script>
+    <script src="../JS/interactividadAmenidades.js"></script>
 
 </body>
 
