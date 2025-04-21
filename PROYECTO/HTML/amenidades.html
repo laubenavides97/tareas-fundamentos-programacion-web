@@ -103,6 +103,10 @@
                     Desde caminatas guiadas y cabalgatas, hasta emocionantes actividades al aire libre, cada aventura es
                     una oportunidad para descubrir la magia de las montañas. ¿Listo para vivir momentos inolvidables?
                 </span>
+                <input type="text" id="buscadorActividades" class="select Large Black" placeholder="Buscar actividades..." />
+                <span id="mensajeSinResultados" class="Large Black" style="display: none; margin-top: 1rem;">
+                    No se encontraron actividades.
+                  </span>
             </div>
 
             <!-- BLOQUE DE ACTIVIDADES-->
@@ -162,7 +166,6 @@
 
             <!-- BLOQUE DE OTRAS ACTIVIDADES-->
             <div class="contenedorOtrasActividades B-LightBlue" id="otrasActividades">
-
                 <div class="otrasActividades">
                     <span class="H1 Black">Descubrí más experiencias con beneficios exclusivos</span>
 
@@ -170,21 +173,25 @@
                         máximo. Como huésped del hotel, obtenés descuentos especiales en actividades externas
                         seleccionadas: desde recorridos en viñedos y visitas culturales hasta aventuras al aire libre
                         organizadas por aliados locales. ¡Viví la zona como un local con beneficios únicos!</span>
-                    
+
                     <select id="selectorPaginas" class="select Large Black">
                         <option value="">Explorá más:</option>
                         <option value="https://www.coopedota.com">20% de descuento en café de Coopedota</option>
-                        <option value="https://lagunadonmanuel.com">2x1 en el pase de día a la Laguna Don Manuel</option>
-                        <option value="https://www.economyrentacar.com">10% de descuento en renta de autos en Economy</option>
-                        <option value="https://www.facebook.com/Copeyestatewinery/">15% de descuento en vinos de Copey Estate Winery</option>
-                        <option value="https://www.baccredomatic.com/es-cr">Acumulá millas al pagar con tus tarjetas del BAC</option>
+                        <option value="https://lagunadonmanuel.com">2x1 en el pase de día a la Laguna Don Manuel
+                        </option>
+                        <option value="https://www.economyrentacar.com">10% de descuento en renta de autos en Economy
+                        </option>
+                        <option value="https://www.facebook.com/Copeyestatewinery/">15% de descuento en vinos de Copey
+                            Estate Winery</option>
+                        <option value="https://www.baccredomatic.com/es-cr">Acumulá millas al pagar con tus tarjetas del
+                            BAC</option>
                     </select>
 
-                    <img src="../MEDIA/faviconDark.svg" alt="" class="faviconForm">
+
                 </div>
+                <img src="../MEDIA/faviconDark.svg" alt="" class="faviconForm">
             </div>
         </section>
-
     </main>
 
     <footer class="footerWebSite B-Blue">
@@ -226,12 +233,12 @@
 
     <script>
         document.getElementById("selectorPaginas").addEventListener("change", function () {
-          const url = this.value;
-          if (url) {
-            window.open(url, "_blank"); // abre en nueva pestaña
-          }
+            const url = this.value;
+            if (url) {
+                window.open(url, "_blank"); // abre en nueva pestaña
+            }
         });
-      </script>
+    </script>
 
     <script src="../JS/baseDatosAmenidades.js"></script>
     <script src="../JS/interactividadMenu.js"></script>

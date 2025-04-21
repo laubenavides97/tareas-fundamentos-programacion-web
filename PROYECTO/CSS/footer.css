@@ -7,7 +7,6 @@
 }
 
 .footerWebSite {
-    margin-top: auto;
     display: flex;
     padding: 5rem 9.75rem 1.25rem 9.75rem;
     flex-direction: column;
