@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon para el modo claro -->
+  <link href="../IMAGENES/faviconLight.svg" rel="icon" media="(prefers-color-scheme: light)">
+  <!-- Favicon para el modo oscuro -->
+  <link href="../IMAGENES/faviconDark.svg" rel="icon" media="(prefers-color-scheme: dark)">
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&display=swap"
+    rel="stylesheet">
+  <!-- Hojas de estilo-->
+  <link rel="stylesheet" href="../CSS/colores.css">
+  <link rel="stylesheet" href="../CSS/textos&botones.css">
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="stylesheet" href="../CSS/catalogo.css">
+  <title data-translate="title">Alojamiento | Cloud Vista Lodge</title>
+</head>
+
+<body class="B-White">
+  <header class="B-White">
+    <a href="home.html"><img src="../MEDIA/logo02-Black.svg" alt=""></a>
+
+    <nav>
+      <ul class="opcionesMenu">
+        <li><a href="home.html" class="MenuOption" data-translate="MenuOption1">Inicio</a></li>
+        <li><a href="alojamiento.html" class="MenuOption" data-translate="MenuOption2">Alojamiento</a></li>
+        <li><a href="amenidades.html" class="MenuOption" data-translate="MenuOption3">Amenidades</a></li>
+        <li><a href="nosotros.html" class="MenuOption" data-translate="MenuOption4">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+
+    <ul class="opcionesMenuDerecha">
+      <li><a href="reserva.html" class="CTA-Hug" data-translate="Boton01">Reservar</a></li>
+      <li class="containerSwitchIdioma">
+        <span class="Large Black">ES</span>
+        <label class="language-switch" for="languageSwitch">
+          <!-- control checkbox -->
+          <input type="checkbox" id="languageSwitch" onclick="changeLanguage()">
+          <!-- slider del control -->
+          <span class="slider round"></span>
+        </label>
+        <span class="Large Black">EN</span>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <!--SECCION HERO-->
+    <section class="hero">
+      <div>
+        <span class="contTextoHero Huge White">Reservas</span>
+        <span class="contTextoHero S1 White">Elegí tu fecha ideal y asegurá tu estadía en el corazón de las montaña. ¡Te
+          esperamos para vivir una experiencia inolvidable!</span>
+      </div>
+    </section>
+
+    <section class="actividades">
+      <h2>Actividades disponibles</h2>
+      <div id="actividades-container" class="actividades-grid"></div>
+    </section>
+
+  </main>
+
+  <footer class="footerWebSite B-Blue">
+    <a href="home.html"><img src="../MEDIA/logoFooter.svg" alt="Logo de Cloud Vista Lodge"></a>
+    <div class="containerFooter">
+      <div class="containerInfo">
+        <div class="Info01">
+          <span class="S2-bold White" data-translate="F01">Ubicación</span>
+          <span class="Large White" data-translate="F02">Santa María de Dota, San José, Costa Rica</span>
+        </div>
+        <div class="Info02">
+          <span class="S2-bold White" data-translate="F03">Contacto</span>
+          <span class="Large White" data-translate="F04">Teléfono: +506 2274-7625</span>
+          <span class="Large White" data-translate="F05">E-mail: info@cloudvista.com</span>
+        </div>
+        <div class="Info">
+          <span class="S2-bold White" data-translate="F06">Explora</span>
+          <a href="alojamiento.html" class="Large White" data-translate="F07">Alojamiento</a>
+          <a href="amenidades.html" class="Large White" data-translate="F08">Amenidades</a>
+          <a href="nosotros.html" class="Large White" data-translate="F09">Sobre nosotros</a>
+          <a href="contacto.html" class="Large White" data-translate="F10">Contáctanos</a>
+        </div>
+        <div class="Info">
+          <span class="S2-bold White" data-translate="F11">Síguenos</span>
+          <span class="Large White">Facebook</span>
+          <span class="Large White">Instagram</span>
+          <span class="Large White">X</span>
+        </div>
+      </div>
+
+      <div class="containerTerminos">
+        <span class="Mini White">©Cloud Vista Lodge 2025</span>
+        <span class="Mini White" data-translate="F12">Todos los derechos reservados</span>
+        <span class="Mini White" data-translate="F13">Términos y condiciones</span>
+      </div>
+    </div>
+
+  </footer>
+  <script src="../JS/interactividadMenu.js"></script>
+
+  <script>
+    const actividades = [
+      {
+        id: 101,
+        nombre: "Caminata al Mirador",
+        descripcion: "Senderismo guiado por los mejores paisajes.",
+        imagen: "MEDIA/actividad1.jpg",
+        precio: 15
+      },
+      {
+        id: 102,
+        nombre: "Tour de café",
+        descripcion: "Recorrido por una finca cafetalera local.",
+        imagen: "MEDIA/actividad2.jpg",
+        precio: 25
+      },
+      {
+        id: 103,
+        nombre: "Cabalgata al atardecer",
+        descripcion: "Paseo a caballo por la montaña.",
+        imagen: "MEDIA/actividad3.jpg",
+        precio: 30
+      }
+    ];
+
+    const contenedorActividades = document.getElementById("actividades-container");
+
+    function renderActividades() {
+      actividades.forEach(act => {
+        const card = document.createElement("div");
+        card.className = "card-actividad";
+        card.innerHTML = `
+            <img src="${act.imagen}" alt="${act.nombre}">
+            <div class="contenido">
+              <h3>${act.nombre}</h3>
+              <p>${act.descripcion}</p>
+              <p><strong>$${act.precio} por persona</strong></p>
+              <label>Personas: <input type="number" min="1" value="1" id="input-${act.id}" style="width: 50px;"></label>
+            </div>
+            <button onclick="agregarActividad(${act.id})">Agregar al carrito</button>
+          `;
+        contenedorActividades.appendChild(card);
+      });
+    }
+
+    function agregarActividad(id) {
+      const cantidad = parseInt(document.getElementById(`input-${id}`).value);
+      const actividad = actividades.find(a => a.id === id);
+      const item = { ...actividad, cantidad };
+
+      let carrito = JSON.parse(localStorage.getItem("carritoActividades")) || [];
+      carrito.push(item);
+      localStorage.setItem("carritoActividades", JSON.stringify(carrito));
+
+      alert(`Agregaste "${actividad.nombre}" al carrito.`);
+    }
+
+    renderActividades();
+  </script>
+
+
+
+</body>
+
+</html>

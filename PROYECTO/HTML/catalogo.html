@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../CSS/textos&botones.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/reserva.css">
+    <link rel="stylesheet" href="../CSS/catalogo.css">
     <title data-translate="title">Alojamiento | Cloud Vista Lodge</title>
 </head>
 
@@ -60,27 +60,10 @@
             </div>
         </section>
 
-        <section class="reserva-banner">
-            <div class="reserva-form">
-              <h2>Reservá tu estadía</h2>
-              <form id="form-fechas">
-                <label>
-                  Fecha de entrada:
-                  <input type="date" id="fechaEntrada" required>
-                </label>
-                <label>
-                  Fecha de salida:
-                  <input type="date" id="fechaSalida" required>
-                </label>
-                <label>
-                  Personas:
-                  <input type="number" id="cantidadPersonas" min="1" value="1" required>
-                </label>
-                <button type="submit">Buscar disponibilidad</button>
-              </form>
-            </div>
-          </section>
-          
+        <section class="catalogo">
+            <h2>Disponibilidad de habitaciones</h2>
+            <div id="alojamientos-container" class="catalogo-grid"></div>
+          </section>          
     </main>
 
     <footer class="footerWebSite B-Blue">
@@ -119,38 +102,68 @@
         </div>
 
     </footer>
-    
     <script src="../JS/interactividadMenu.js"></script>
 
-    <!--
     <script>
-        const formFechas = document.getElementById("form-fechas");
-      
-        formFechas.addEventListener("submit", function (e) {
-          e.preventDefault();
-      
-          const entrada = document.getElementById("fechaEntrada").value;
-          const salida = document.getElementById("fechaSalida").value;
-          const personas = document.getElementById("cantidadPersonas").value;
-      
-          if (new Date(entrada) >= new Date(salida)) {
-            alert("La fecha de salida debe ser posterior a la de entrada.");
-            return;
+        const alojamientos = [
+          {
+            id: 1,
+            nombre: "Cabaña Río Claro",
+            descripcion: "Ideal para parejas. Vista al río y chimenea.",
+            capacidad: 2,
+            imagen: "MEDIA/cabana1.jpg",
+            precio: 120
+          },
+          {
+            id: 2,
+            nombre: "Suite Bosque Alto",
+            descripcion: "Suite con balcón panorámico.",
+            capacidad: 4,
+            imagen: "MEDIA/suite1.jpg",
+            precio: 200
+          },
+          {
+            id: 3,
+            nombre: "Villa Familiar",
+            descripcion: "Espaciosa villa para grupos o familias.",
+            capacidad: 6,
+            imagen: "MEDIA/villa1.jpg",
+            precio: 300
           }
+        ];
       
-          // Guardar datos en localStorage para usarlos en el siguiente paso
-          localStorage.setItem("reserva", JSON.stringify({
-            entrada,
-            salida,
-            personas
-          }));
+        const datosReserva = JSON.parse(localStorage.getItem("reserva"));
+        const contenedor = document.getElementById("alojamientos-container");
       
-          // Redirigir a la página de catálogo (paso 2)
-          window.location.href = "catalogo.html";
-        });
+        function renderCatalogo() {
+          contenedor.innerHTML = "";
+          alojamientos.forEach(aloj => {
+            if (aloj.capacidad >= parseInt(datosReserva.personas)) {
+              const card = document.createElement("div");
+              card.className = "card-alojamiento";
+              card.innerHTML = `
+                <img src="${aloj.imagen}" alt="${aloj.nombre}">
+                <div class="contenido">
+                  <h3>${aloj.nombre}</h3>
+                  <p>${aloj.descripcion}</p>
+                  <p><strong>Capacidad:</strong> ${aloj.capacidad} personas</p>
+                  <p><strong>$${aloj.precio}/noche</strong></p>
+                </div>
+                <button onclick="seleccionarAlojamiento(${aloj.id})">Seleccionar</button>
+              `;
+              contenedor.appendChild(card);
+            }
+          });
+        }
+      
+        function seleccionarAlojamiento(id) {
+          const seleccionado = alojamientos.find(a => a.id === id);
+          localStorage.setItem("alojamiento", JSON.stringify(seleccionado));
+          window.location.href = "actividades.html"; // Paso 3
+        }
+      
+        renderCatalogo();
       </script>
-    -->
-    
       
 
 </body>

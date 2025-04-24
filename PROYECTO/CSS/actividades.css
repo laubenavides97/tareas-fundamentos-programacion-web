@@ -48,38 +48,43 @@ main {
 }
 
 /**/
-.reserva-banner {
-  background: url('MEDIA/img06.png') center/cover no-repeat;
-  padding: 60px 20px;
+.actividades {
+  padding: 40px 20px;
+  background: #ffffff;
   text-align: center;
-  color: white;
 }
 
-.reserva-form {
-  background: rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  padding: 30px;
+.actividades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card-actividad {
+  background: #f9f9f9;
   border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
-.reserva-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.reserva-form input {
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
+.card-actividad img {
   width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.reserva-form button {
-  background-color: orange;
+.card-actividad .contenido {
+  padding: 15px;
+}
+
+.card-actividad button {
+  width: 100%;
+  background-color: #4299e1;
   color: white;
-  padding: 10px;
   border: none;
+  padding: 10px;
+  border-radius: 0 0 12px 12px;
   cursor: pointer;
-  border-radius: 6px;
 }
