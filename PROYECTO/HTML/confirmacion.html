@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="../CSS/textos&botones.css">
   <link rel="stylesheet" href="../CSS/header.css">
   <link rel="stylesheet" href="../CSS/footer.css">
-  <link rel="stylesheet" href="../CSS/actividades.css">
+  <link rel="stylesheet" href="../CSS/confirmacion.css">
   <title data-translate="title">Alojamiento | Cloud Vista Lodge</title>
 </head>
 
@@ -49,16 +49,16 @@
 
       <div class="divisor"></div>
 
-      <div class="contenedorPaso">
-        <span class="numero activo">3</span>
-        <span class="paso presente">Personaliza tu estadía </span>
-      </div>
+      <a class="contenedorPaso" href="actividades.html">
+        <span class="numero">3</span>
+        <span class="paso">Personaliza tu estadía </span>
+      </a>
 
       <div class="divisor"></div>
 
       <div class="contenedorPaso">
-        <span class="numero">4</span>
-        <span class="paso">Confirma tu estadía</span>
+        <span class="numero activo">4</span>
+        <span class="paso presente">Confirma tu estadía</span>
       </div>
     </section>
   </header>
@@ -98,15 +98,118 @@
       </form>
     </section>
 
-    <span class="H1 Black">Personaliza tu estadía</span>
+    <section class="cont-confirmacion">
+      <div class="reservation-details">
+        <h2>Tu reservación</h2>
+        <!--CONTENEDOR INFO COSTOS-->
+        <div class="cont-costos">
+          <!--SECCION 1-->
+          <div class="seccion-costos">
+            <div class="contFechas">
+              <span class="detail-label" id="fecha-entrada-checkout">Fecha llegada</span>
+              <span class="detail-label" id="fecha-entrada-checkout">-</span>
+              <span class="detail-label" id="fecha-salida-checkout">Fecha llegada</span>
+            </div>
 
-    <a href="confirmacion.html" class="CTA-Hug">
-      Confirmar mi estadía
-    </a>
+            <span class="detail-label" id="cant-huespedes-checkout">Huespedes</span>
+          </div>
 
-    <section class="seccionCategoria">
-      <div id="contenedor-actividades"></div>
+          <!--SECCION 2 habitacion-->
+          <div class="seccion-costos">
+            <span class="detail-header" id="alojamientoSeleccionado">Habitacion</span>
+
+            <div class="contPrecios">
+              <span class="detail-label">Tarifa por noche</span>
+              <span class="detail-label" id="monto-noche-checkout">Monto</span>
+            </div>
+
+            <div class="contPrecios">
+              <span class="detail-label" id="num-noches-checkout">X noches</span>
+              <span class="detail-label" id="total-noches-checkout">Monto</span>
+            </div>
+
+          </div>
+
+          <!--SECCION 3 actividades-->
+          <div class="seccion-costos">
+            <span class="detail-header actividad-selected">Actividades</span>
+
+            <div class="contPrecios">
+            </div>
+
+          </div>
+
+
+          <!--SECCION 4-->
+          <div class="seccion-costos">
+            <div class="contPrecios">
+              <span class="detail-label">Subtotal</span>
+              <span class="detail-label" id="subtotal">Monto</span>
+            </div>
+
+            <div class="contPrecios">
+              <span class="detail-label">IVA (13%)</span>
+              <span class="detail-label" id="IVA">Monto</span>
+            </div>
+          </div>
+
+          <!--SECCION 4-->
+          <div class="seccion-costos">
+            <span class="detail-label">Total</span>
+            <span class="detail-label" id="total-pagar">Monto</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="confirmation-details">
+        <h2>Confirma tu reserva</h2>
+
+        <div class="guest-details">
+          <span class="guest-details-header">Detalles del huésped</span>
+
+          <div class="cont-info-guest">
+            <div class="input-group">
+              <span class="label-cont"></span><label for="nombre">Nombre</label></span>
+              <input type="text" id="nombre" class="emailSuscripcion" placeholder="Ingrese tu nombre" required>
+            </div>
+
+            <div class="input-group">
+              <label for="primer_apellido">Apellidos</label>
+              <input type="text" id="primer_apellido" placeholder="Ingrese tu primer apellido" required>
+            </div>
+            <div class="input-group">
+              <label for="correo_electronico">Correo electrónico</label>
+              <input type="text" id="correo_electronico" placeholder="Ingrese tu correo electrónico" required>
+            </div>
+            <div class="input-group">
+              <label for="telefono">Teléfono</label>
+              <input type="text" id="telefono" placeholder="Ingrese tu número de teléfono" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-details">
+          <h3>Detalles del pago</h3>
+          <div class="input-group">
+            <label for="titular_tarjeta">Titular de la tarjeta</label>
+            <input type="text" id="titular_tarjeta" placeholder="Ingrese tu nombre">
+          </div>
+          <div class="input-group">
+            <label for="numero_tarjeta">Número de la tarjeta</label>
+            <input type="text" id="numero_tarjeta" placeholder="Ingrese tu primer apellido">
+          </div>
+          <div class="input-group">
+            <label for="fecha_vencimiento">Fecha de vencimiento</label>
+            <input type="text" id="fecha_vencimiento" placeholder="Ingrese tu correo electrónico">
+          </div>
+        </div>
+
+        <button type="button" id="btnSend" class="CTA-Hug" data-translate="Boton04">Hacer reservación</button>
+        <div class="mensaje Large" id="alertaForm"></div>
+      </form>
+
     </section>
+
   </main>
 
   <footer class="footerWebSite B-Blue">
@@ -145,10 +248,14 @@
     </div>
 
   </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="../JS/baseDatosAmenidades.js"></script>
+  <script src="../JS/baseDatosAlojamiento.js"></script>
   <script src="../JS/interactividadMenu.js"></script>
   <script src="../JS/localStorage.js"></script>
   <script src="../JS/actividades.js"></script>
+  <script src="../JS/checkout.js"></script>
+  <script src="../JS/emailCheckout.js"></script>
 
 </body>
 

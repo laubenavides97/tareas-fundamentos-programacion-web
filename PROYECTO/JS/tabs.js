@@ -24,7 +24,6 @@ function opciones(evt, info) {
     evt.currentTarget.className += " active";
 }
 
-
 function renderAlojamiento(alojamiento) {
     alojamiento.forEach(item => {
         const contenedor = document.getElementById(item.id);

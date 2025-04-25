@@ -56,31 +56,55 @@
         <section class="hero">
             <div>
                 <span class="contTextoHero Huge White">Reservas</span>
-                <span class="contTextoHero S1 White">Elegí tu fecha ideal y asegurá tu estadía en el corazón de las montaña. ¡Te esperamos para vivir una experiencia inolvidable!</span>
+                <span class="contTextoHero S1 White">Elegí tu fecha ideal y asegurá tu estadía en el corazón de las
+                    montaña. ¡Te esperamos para vivir una experiencia inolvidable!</span>
             </div>
         </section>
 
-        <section class="reserva-banner">
-            <div class="reserva-form">
-              <h2>Reservá tu estadía</h2>
-              <form id="form-fechas">
-                <label>
-                  Fecha de entrada:
-                  <input type="date" id="fechaEntrada" required>
-                </label>
-                <label>
-                  Fecha de salida:
-                  <input type="date" id="fechaSalida" required>
-                </label>
-                <label>
-                  Personas:
-                  <input type="number" id="cantidadPersonas" min="1" value="1" required>
-                </label>
-                <button type="submit">Buscar disponibilidad</button>
-              </form>
-            </div>
-          </section>
-          
+        <!--FORM FECHAS-->
+        <section>
+            <form id="form-fechas" class="buscador-reservas">
+                <div class="campo">
+                    <span class="material-symbols-light--calendar-month"></span>
+                    <div>
+                        <span class="label">Llegada</span>
+                        <input type="date" class="input-fecha" id="fecha-entrada" name="entrada" />
+                    </div>
+                </div>
+
+                <div class="separador"></div>
+
+                <div class="campo">
+                    <span class="material-symbols-light--calendar-month"></span>
+                    <div>
+                        <span class="label">Salida</span>
+                        <input type="date" class="input-fecha" id="fecha-salida" name="salida" />
+                    </div>
+                </div>
+
+                <div class="separador"></div>
+
+                <div class="campo">
+                    <span class="material-symbols-light--person"></span>
+                    <div>
+                        <span class="label">Huéspedes</span>
+                        <input type="number" class="input-fecha" id="cantidad-personas" name="personas" min="1"
+                            value="1" />
+                    </div>
+                </div>
+
+                <div class="separador"></div>
+
+                <div class="campo">
+                    <button type="submit" class="CTA-Hug">Buscar habitaciones</button>
+                </div>
+            </form>
+        </section>
+
+        <a href="../MEDIA/guia.pdf" target="_blank" class="CTA-Hug">
+            Ver guía en PDF
+        </a>
+
     </main>
 
     <footer class="footerWebSite B-Blue">
@@ -119,39 +143,18 @@
         </div>
 
     </footer>
-    
-    <script src="../JS/interactividadMenu.js"></script>
 
-    <!--
-    <script>
-        const formFechas = document.getElementById("form-fechas");
-      
-        formFechas.addEventListener("submit", function (e) {
-          e.preventDefault();
-      
-          const entrada = document.getElementById("fechaEntrada").value;
-          const salida = document.getElementById("fechaSalida").value;
-          const personas = document.getElementById("cantidadPersonas").value;
-      
-          if (new Date(entrada) >= new Date(salida)) {
-            alert("La fecha de salida debe ser posterior a la de entrada.");
-            return;
-          }
-      
-          // Guardar datos en localStorage para usarlos en el siguiente paso
-          localStorage.setItem("reserva", JSON.stringify({
-            entrada,
-            salida,
-            personas
-          }));
-      
-          // Redirigir a la página de catálogo (paso 2)
-          window.location.href = "catalogo.html";
-        });
-      </script>
-    -->
-    
-      
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+    <script src="../JS/interactividadMenu.js"></script>
+    <script src="../JS/reserva.js"></script>
 
 </body>
 
