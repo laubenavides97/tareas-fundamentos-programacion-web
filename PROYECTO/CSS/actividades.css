@@ -216,7 +216,7 @@ main {
   align-self: stretch;
 }
 
-.nombre-actividad {
+.nombreTxt {
   color: var(--Blue);
 
   /* MiniCaps */

@@ -1,40 +1,105 @@
-// Asumiendo que ya has cargado EmailJS correctamente
+window.addEventListener('load', initConfirmacion, false);
 
-document.getElementById('btnSend').addEventListener('click', function () {
-  // Capturar los valores del formulario
-  const nombre = document.getElementById('nombre').value;
-  const apellido = document.getElementById('primer_apellido').value;
-  const correo = document.getElementById('correo_electronico').value;
-  const telefono = document.getElementById('telefono').value;
-  const titular = document.getElementById('titular_tarjeta').value;
-  const numeroTarjeta = document.getElementById('numero_tarjeta').value;
-  const fechaVencimiento = document.getElementById('fecha_vencimiento').value;
+function initConfirmacion() {
+    emailjs.init("Bq4g2t3PbX0tAxDl6");
 
-  // Validación de campos (puedes agregar más validaciones según lo necesites)
-  if (!nombre || !apellido || !correo || !telefono || !titular || !numeroTarjeta || !fechaVencimiento) {
-      alert("Por favor complete todos los campos.");
-      return;
-  }
+    const form = document.getElementById('emailConfirmacion');
+    const btn = document.getElementById('btnSend');
+    const emailField = document.getElementById('correo_electronico');
+    const expressionEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
-  // Crear el objeto con los datos para el template de EmailJS
-  const formData = {
-      user_name: nombre + " " + apellido,
-      user_email: correo,
-      user_phone: telefono,
-      payment_holder: titular,
-      payment_card_number: numeroTarjeta,
-      payment_expiry_date: fechaVencimiento,
-  };
+    btn.addEventListener('click', function () {
+        const requiredFields = form.querySelectorAll('[required]');
+        let formValid = true;
 
-  // Enviar el correo con EmailJS
-  emailjs.send('service_boletin', 'template_ltmsb4q', formData)
-      .then(function(response) {
-          console.log('Correo enviado exitosamente', response);
-          // Puedes mostrar un mensaje de éxito al usuario
-          document.getElementById('alertaForm').innerHTML = "¡Tu reserva ha sido confirmada y el resumen enviado a tu correo!";
-      }, function(error) {
-          console.log('Error al enviar correo:', error);
-          // Mostrar un mensaje de error
-          document.getElementById('alertaForm').innerHTML = "Hubo un problema al enviar el correo. Intenta nuevamente.";
-      });
-});
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                formValid = false;
+            }
+        });
+
+        const emailValue = emailField.value.trim();
+        const emailValid = expressionEmail.test(emailValue);
+
+        if (!formValid) {
+            mostrarAlerta('empty');
+            return;
+        }
+
+        if (!emailValid) {
+            mostrarAlerta('invalid');
+            return;
+        }
+
+        // Enviar el formulario con EmailJS
+        emailjs.sendForm('service_boletin', 'template_ltmsb4q', '#emailConfirmacion')
+            .then(() => {
+                mostrarAlerta('success');
+                form.reset();
+            })
+            .catch((error) => {
+                console.error('Error al enviar:', error);
+                mostrarAlerta('error');
+            });
+    });
+
+    function mostrarAlerta(tipo) {
+        let title = '';
+        let message = '';
+        let showConfirmButton = true;
+        let timer = null;
+        let lottie = '';
+
+        switch (tipo) {
+            case 'empty':
+                title = 'Campos incompletos';
+                message = 'Por favor, completa todos los campos del formulario.';
+                lottie = 'https://lottie.host/f7f2093e-c0f6-4b32-8ee4-eca207002d8e/E88K7wCt3o.lottie';
+                break;
+            case 'invalid':
+                title = 'Correo inválido';
+                message = 'Ingresa un correo electrónico válido.';
+                lottie = 'https://lottie.host/f7f2093e-c0f6-4b32-8ee4-eca207002d8e/E88K7wCt3o.lottie';
+                break;
+            case 'success':
+                title = '¡Reserva confirmada!';
+                message = 'Hemos enviado la confirmación a tu correo.';
+                lottie = 'https://lottie.host/f4963d62-236a-4d3a-9aa4-a14c02ea2124/TzmmnEU4Qt.lottie';
+                showConfirmButton = false;
+                timer = 4000;
+                break;
+            case 'error':
+                title = 'Error al enviar';
+                message = 'Hubo un problema al enviar la confirmación. Intenta de nuevo.';
+                lottie = 'https://lottie.host/f7f2093e-c0f6-4b32-8ee4-eca207002d8e/E88K7wCt3o.lottie';
+                showConfirmButton = false;
+                timer = 4000;
+                break;
+        }
+
+        Swal.fire({
+            title: title,
+            html: `
+          <lottie-player 
+            src="${lottie}" 
+            background="transparent" 
+            speed="0.75" 
+            class="lottieAlert1" 
+            autoplay>
+          </lottie-player>
+          ${message ? `<p>${message}</p>` : ''}
+        `,
+            confirmButtonText: showConfirmButton ? 'Intentar de nuevo' : undefined,
+            showConfirmButton: showConfirmButton,
+            timer: timer,
+            timerProgressBar: !!timer,
+            scrollbarPadding: false,
+            customClass: {
+                title: "H2 Black",
+                htmlContainer: "S2 Black",
+                popup: "popup",
+                confirmButton: "CTA-Hug"
+            }
+        });
+    }
+};

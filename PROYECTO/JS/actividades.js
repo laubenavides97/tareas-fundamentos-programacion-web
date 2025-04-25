@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (continuarBtn) {
     continuarBtn.addEventListener("click", () => {
       agruparActividadesSeleccionadas();
-      window.location.href = "checkout.html"; // O mostrarReserva.html según el nombre real
+      window.location.href = "checkout.html";
     });
   }
 });
@@ -25,8 +25,7 @@ function renderizarActividades(actividades) {
       const card = document.createElement("div");
       card.classList.add("card-actividades");
 
-      // Asegúrate de que el precio está siendo manejado correctamente.
-      const precio = actividad.precio.monto || actividad.precio;
+      const precio = actividad.precio.valor;
 
       card.innerHTML = `
         <div class="foto-actividad">
@@ -34,18 +33,18 @@ function renderizarActividades(actividades) {
         </div>
 
         <div class="cont-descip-actividad">
-          <span id="nombre_${id}" class="nombre-actividad">${actividad.titulo}</span>
+          <span class="nombreTxt nombre-actividad" id="nombre_${id}">${actividad.titulo}</span>
 
           <div class="cont-precio">
             <div class="precioTxt">
-              <span id="precio_${id}">${precio}</span>
+              <span class="precio_${id}">¢${precio}</span>
             </div>
             <span class="infoImpuestos">Los impuestos se calculan al final</span>
           </div>
 
           <div class="cont-contador">
             <span class="labelContador">Ingresa la cantidad de huéspedes</span>
-            <input type="number" class="input-contador" id="contador_${id}" name="huespedes" min="0" value="${cantidadInicial}" />
+            <input type="number" class="input-contador" id="contador_${id}" name="huespedes_${id}" min="0" value="${cantidadInicial}" />
           </div>
         </div>
       `;
@@ -56,11 +55,10 @@ function renderizarActividades(actividades) {
       input.addEventListener('input', () => {
         const cantidad = parseInt(input.value);
         if (cantidad > 0) {
-          // Aquí se hace la modificación para guardar los detalles correctos
           const actividadConCantidad = {
             id: actividad.id,
             nombre: actividad.titulo,
-            precio: actividad.precio.monto, // extrae el número directamente
+            precio: actividad.precio.valor,
             cantidad: cantidad
           };
           localStorage.setItem(localStorageKey, JSON.stringify(actividadConCantidad));
@@ -82,10 +80,9 @@ function agruparActividadesSeleccionadas() {
       const actividad = JSON.parse(localStorage.getItem(clave));
 
       if (actividad && actividad.cantidad > 0) {
-        // Asegúrate de convertir correctamente el precio a número
         const precioNum = parseInt(actividad.precio.monto || actividad.precio, 10);
         actividadesSeleccionadas.push({
-          nombre: actividad.titulo,
+          nombre: actividad.nombre,
           precio: precioNum,
           cantidad: actividad.cantidad
         });

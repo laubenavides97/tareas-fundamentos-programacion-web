@@ -134,9 +134,8 @@
           <div class="seccion-costos">
             <span class="detail-header actividad-selected">Actividades</span>
 
-            <div class="contPrecios">
-            </div>
-
+            <ul id="contenedor-actividades-checkout">
+            </ul>
           </div>
 
 
@@ -161,7 +160,7 @@
         </div>
       </div>
 
-      <form class="confirmation-details">
+      <form class="confirmation-details" id="emailConfirmacion" name="emailConfirmacion">
         <h2>Confirma tu reserva</h2>
 
         <div class="guest-details">
@@ -169,25 +168,25 @@
 
           <div class="cont-info-guest">
             <div class="input-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" class="emailSuscripcion" placeholder="Ingresa tu nombre" required>
+              <label for="nombrePersona">Nombre</label>
+              <input type="text" id="nombrePersona" name="nombrePersona" class="emailSuscripcion" placeholder="Ingresa tu nombre" required>
             </div>
 
             <div class="input-group">
               <label for="primer_apellido">Apellidos</label>
-              <input type="text" id="primer_apellido" class="emailSuscripcion" placeholder="Ingresa tus apellidos"
+              <input type="text" id="primer_apellido" name="primer_apellido" class="emailSuscripcion" placeholder="Ingresa tus apellidos"
                 required>
             </div>
 
             <div class="input-group">
               <label for="correo_electronico">Correo electrónico</label>
-              <input type="email" id="correo_electronico" class="emailSuscripcion"
+              <input type="email" id="correo_electronico" name="correo_electronico" class="emailSuscripcion"
                 placeholder="Ingresa tu correo electrónico" required>
             </div>
 
             <div class="input-group">
               <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" class="emailSuscripcion" placeholder="Ingrese tu número de teléfono"
+              <input type="tel" id="telefono" name="telefono" class="emailSuscripcion" placeholder="Ingrese tu número de teléfono"
                 required>
             </div>
           </div>
@@ -198,18 +197,19 @@
 
           <div class="cont-info-guest">
             <div class="input-group">
-              <label for="nombre">Titular de la tarjeta</label>
-              <input type="text" id="nombre" class="emailSuscripcion" placeholder="Nombre en la tarjeta" required>
+              <label for="nombreTarjeta">Titular de la tarjeta</label>
+              <input type="text" id="nombreTarjeta" name="nombreTarjeta" class="emailSuscripcion" placeholder="Nombre en la tarjeta" required>
             </div>
 
             <div class="input-group">
               <label for="primer_apellido">Número de la tarjeta</label>
-              <input type="text" id="numeroTarjeta" class="emailSuscripcion" maxlength="19" placeholder="1234 5678 9012 3456" />
+              <input type="text" id="numeroTarjeta" name="numeroTarjeta" class="emailSuscripcion" maxlength="19"
+                placeholder="1234 5678 9012 3456" />
             </div>
 
             <div class="input-group">
               <label for="correo_electronico">Fecha de vencimiento</label>
-              <select id="mes" class="emailSuscripcion select-placeholder">
+              <select id="mes" name="mes" class="emailSuscripcion select-placeholder">
                 <option value="" disabled selected hidden>Mes</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -222,30 +222,30 @@
                 <option value="09">09</option>
                 <option value="10">10</option>
                 <option value="11">11</option>
-                <option value="12">12</option>  
+                <option value="12">12</option>
               </select>
-                
-                <select id="anio" class="emailSuscripcion select-placeholder">
-                  <option value="" disabled selected hidden>Año</option>
-                  <option value="2025">2025</option>
-                  <option value="2026">2026</option>
-                  <option value="2027">2027</option>
-                  <option value="2028">2028</option>
-                  <option value="2029">2029</option>
-                  <option value="2030">2030</option>
-                </select>
+
+              <select id="anio" name="anio" class="emailSuscripcion select-placeholder">
+                <option value="" disabled selected hidden>Año</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
 
             </div>
 
             <div class="input-group">
               <label for="cvv">CVV</label>
-              <input type="text" id="cvv" maxlength="4" placeholder="123" class="emailSuscripcion" required/>
+              <input type="text" id="cvv" maxlength="4" placeholder="123" class="emailSuscripcion" required />
 
             </div>
           </div>
         </div>
 
-        
+
         <button type="button" id="btnSend" class="CTA-Hug" data-translate="Boton04">Hacer reservación</button>
         <div class="mensaje Large" id="alertaForm"></div>
       </form>
@@ -290,14 +290,23 @@
     </div>
 
   </footer>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- libreria SWEETALERT-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- interactividad Lottie JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+  <!-- libreria Lottie JS-->
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
   <script src="../JS/baseDatosAmenidades.js"></script>
   <script src="../JS/baseDatosAlojamiento.js"></script>
   <script src="../JS/interactividadMenu.js"></script>
   <script src="../JS/localStorage.js"></script>
-  <script src="../JS/actividades.js"></script>
   <script src="../JS/checkout.js"></script>
   <script src="../JS/emailCheckout.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 </body>
 
