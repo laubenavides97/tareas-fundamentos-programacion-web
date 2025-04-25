@@ -250,7 +250,7 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  border: 1px solid var(--DarkGray30, #4B4B4D);
+  border: 1px solid var(--LightGray);
 }
 
 .guest-details-header {
@@ -261,6 +261,7 @@ h2 {
   align-self: stretch;
   background: var(--LightBlue, #BACEF7);
   color: var(--Black, #0C0C0D);
+  border-bottom: 1px solid var(--LightGray);
 
   /* Subtítulo 2 */
   font-family: "DM Sans";
@@ -288,10 +289,9 @@ h2 {
   align-self: stretch;
 }
 
-.label-cont {
+label {
   width: 180px;
   color: var(--Negro, #191919);
-
   /* Párrafos Bold */
   font-family: "DM Sans";
   font-size: 16px;
@@ -300,13 +300,66 @@ h2 {
   line-height: normal;
 }
 
+.fecha-vencimiento{
+
+}
+
+
 .emailSuscripcion {
   display: flex;
   flex: 1 0 0;
-  padding: 10px 14px;
+  padding: 16px 16px;
   align-items: center;
   border: none;
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid var(--Black);
+  color: var(--Black);
+
+    /* Párrafos */
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 137.5% */
+}
+
+.select-placeholder:valid {
+  color: var(--Black);
+  /* Párrafos */
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 137.5% */
+}
+.emailSuscripcion::placeholder, .select-placeholder {
+  color: var(--Gris2, #666);
+  /* Párrafos */
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  /* 137.5% */
+}
+
+.emailSuscripcion:focus {
+  outline: none;
+  border: 1px solid var(--Blue);
+  background-color: var(--White);
+
+}
+
+select::first-line{
+  color: var(--Gris2, #666);
+  /* Párrafos */
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  /* 137.5% */
 }

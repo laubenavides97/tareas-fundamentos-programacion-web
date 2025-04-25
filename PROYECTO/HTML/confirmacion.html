@@ -107,7 +107,7 @@
           <div class="seccion-costos">
             <div class="contFechas">
               <span class="detail-label" id="fecha-entrada-checkout">Fecha llegada</span>
-              <span class="detail-label" id="fecha-entrada-checkout">-</span>
+              <span class="detail-label">al</span>
               <span class="detail-label" id="fecha-salida-checkout">Fecha llegada</span>
             </div>
 
@@ -169,41 +169,83 @@
 
           <div class="cont-info-guest">
             <div class="input-group">
-              <span class="label-cont"></span><label for="nombre">Nombre</label></span>
-              <input type="text" id="nombre" class="emailSuscripcion" placeholder="Ingrese tu nombre" required>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" class="emailSuscripcion" placeholder="Ingresa tu nombre" required>
             </div>
 
             <div class="input-group">
               <label for="primer_apellido">Apellidos</label>
-              <input type="text" id="primer_apellido" placeholder="Ingrese tu primer apellido" required>
+              <input type="text" id="primer_apellido" class="emailSuscripcion" placeholder="Ingresa tus apellidos"
+                required>
             </div>
+
             <div class="input-group">
               <label for="correo_electronico">Correo electrónico</label>
-              <input type="text" id="correo_electronico" placeholder="Ingrese tu correo electrónico" required>
+              <input type="email" id="correo_electronico" class="emailSuscripcion"
+                placeholder="Ingresa tu correo electrónico" required>
             </div>
+
             <div class="input-group">
               <label for="telefono">Teléfono</label>
-              <input type="text" id="telefono" placeholder="Ingrese tu número de teléfono" required>
+              <input type="tel" id="telefono" class="emailSuscripcion" placeholder="Ingrese tu número de teléfono"
+                required>
             </div>
           </div>
         </div>
 
-        <div class="payment-details">
-          <h3>Detalles del pago</h3>
-          <div class="input-group">
-            <label for="titular_tarjeta">Titular de la tarjeta</label>
-            <input type="text" id="titular_tarjeta" placeholder="Ingrese tu nombre">
-          </div>
-          <div class="input-group">
-            <label for="numero_tarjeta">Número de la tarjeta</label>
-            <input type="text" id="numero_tarjeta" placeholder="Ingrese tu primer apellido">
-          </div>
-          <div class="input-group">
-            <label for="fecha_vencimiento">Fecha de vencimiento</label>
-            <input type="text" id="fecha_vencimiento" placeholder="Ingrese tu correo electrónico">
+        <div class="guest-details">
+          <span class="guest-details-header">Detalles del huésped</span>
+
+          <div class="cont-info-guest">
+            <div class="input-group">
+              <label for="nombre">Titular de la tarjeta</label>
+              <input type="text" id="nombre" class="emailSuscripcion" placeholder="Nombre en la tarjeta" required>
+            </div>
+
+            <div class="input-group">
+              <label for="primer_apellido">Número de la tarjeta</label>
+              <input type="text" id="numeroTarjeta" class="emailSuscripcion" maxlength="19" placeholder="1234 5678 9012 3456" />
+            </div>
+
+            <div class="input-group">
+              <label for="correo_electronico">Fecha de vencimiento</label>
+              <select id="mes" class="emailSuscripcion select-placeholder">
+                <option value="" disabled selected hidden>Mes</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>  
+              </select>
+                
+                <select id="anio" class="emailSuscripcion select-placeholder">
+                  <option value="" disabled selected hidden>Año</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+                </select>
+
+            </div>
+
+            <div class="input-group">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" maxlength="4" placeholder="123" class="emailSuscripcion" required/>
+
+            </div>
           </div>
         </div>
 
+        
         <button type="button" id="btnSend" class="CTA-Hug" data-translate="Boton04">Hacer reservación</button>
         <div class="mensaje Large" id="alertaForm"></div>
       </form>
