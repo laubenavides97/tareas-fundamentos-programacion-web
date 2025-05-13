@@ -54,12 +54,12 @@ function initConfirmacion() {
             case 'empty':
                 title = 'Campos incompletos';
                 message = 'Por favor, completa todos los campos del formulario.';
-                lottie = 'https://lottie.host/f7f2093e-c0f6-4b32-8ee4-eca207002d8e/E88K7wCt3o.lottie';
+                lottie = 'https://lottie.host/540110b8-04e2-4830-9e71-c3f5507e71e4/pO8VNHihJy.lottie';
                 break;
             case 'invalid':
                 title = 'Correo inválido';
                 message = 'Ingresa un correo electrónico válido.';
-                lottie = 'https://lottie.host/f7f2093e-c0f6-4b32-8ee4-eca207002d8e/E88K7wCt3o.lottie';
+                lottie = 'https://lottie.host/540110b8-04e2-4830-9e71-c3f5507e71e4/pO8VNHihJy.lottie';
                 break;
             case 'success':
                 title = '¡Reserva confirmada!';
@@ -71,7 +71,7 @@ function initConfirmacion() {
             case 'error':
                 title = 'Error al enviar';
                 message = 'Hubo un problema al enviar la confirmación. Intenta de nuevo.';
-                lottie = 'https://lottie.host/f7f2093e-c0f6-4b32-8ee4-eca207002d8e/E88K7wCt3o.lottie';
+                lottie = 'https://lottie.host/540110b8-04e2-4830-9e71-c3f5507e71e4/pO8VNHihJy.lottie';
                 showConfirmButton = false;
                 timer = 4000;
                 break;
