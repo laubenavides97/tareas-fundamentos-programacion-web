@@ -80,13 +80,13 @@ function initConfirmacion() {
         Swal.fire({
             title: title,
             html: `
-          <lottie-player 
+          <dotlottie-player 
             src="${lottie}" 
             background="transparent" 
             speed="0.75" 
             class="lottieAlert1" 
             autoplay>
-          </lottie-player>
+          </dotlottie-player>
           ${message ? `<p>${message}</p>` : ''}
         `,
             confirmButtonText: showConfirmButton ? 'Intentar de nuevo' : undefined,
